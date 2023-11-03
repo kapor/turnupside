@@ -15,9 +15,14 @@ body {
 
 .style1 {
 	font-family: monospace;
-	font-size: 20px;
-	line-height: 20px;
+	font-weight: 200;
+	font-size: 80px;
+	line-height: 80px;
+	letter-spacing: 4px;
 	color: #6219FF;
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
 a:link {
 	color: #FFFFFF;
@@ -43,23 +48,27 @@ a:active {
 .center {
     display: flex;
     flex-direction: column;
+    width: 100%;
+	magin: auto;
 }
 
 
 </style>
 </head>
 <body bgcolor="#444444">
-<table border="0" cellpadding="0" height="100%" width="100%">
-<tbody>
-<tr>
-<td bgcolor="#EFDED4">
-<center class="center">
-    <span class="style1">TURN UPSIDE</span>
-	<span class="style1">TURNUP SIDE</span>
-</center>
-</td>
-</tr>
-</tbody>
-</table>
+	<table border="0" cellpadding="0" height="100%" width="100%">
+		<tbody>
+			<tr>
+				<td bgcolor="#FFFFF6">
+					<div class="center">					
+					    <p class="style1">TURN UPSIDE</p>					    
+						<p class="style1">TURNUP SIDE</p>
+						<p class="style1" style="transform: rotate(180deg);">TURNUP SIDE</p>						
+						<p class="style1" style="transform: rotate(180deg);">TURN UPSIDE</p>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>

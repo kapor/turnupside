@@ -1,0 +1,267 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"count2"
+			],
+			[
+				"strt",
+				"strtolower()"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"brow",
+				"Colorsublime: Browse Themes Online"
+			],
+			[
+				"install",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Default.sublime-commands"
+			],
+			[
+				"snippe",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"instal",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"insta",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"UI",
+				"UI: Customize Theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/aaronkapor/repos/turnupside"
+	],
+	"file_history":
+	[
+		"/Users/aaronkapor/repos/turnupside/_config.yml",
+		"/Users/aaronkapor/repos/turnupside/index.html",
+		"/Users/aaronkapor/repos/turnupside/_layouts/default.html",
+		"/Users/aaronkapor/repos/php/sandbox/null.php",
+		"/Users/aaronkapor/repos/php/sandbox/booleans.php",
+		"/Users/aaronkapor/repos/php/sandbox/array_functions.php",
+		"/Users/aaronkapor/repos/php/sandbox/arrays.php",
+		"/Users/aaronkapor/repos/php/sandbox/assoc_arrays.php",
+		"/Users/aaronkapor/repos/php/sandbox/floats.php",
+		"/Users/aaronkapor/repos/php/sandbox/helloworld.php",
+		"/Users/aaronkapor/repos/php/sandbox/integers.php",
+		"/Users/aaronkapor/repos/php/sandbox/my_phpinfo.php",
+		"/Users/aaronkapor/repos/php/sandbox/strings.php",
+		"/Users/aaronkapor/repos/php/sandbox/logical.php",
+		"/Users/aaronkapor/repos/php/sandbox/constants.php",
+		"/Users/aaronkapor/repos/php/sandbox/type_casting.php",
+		"/Users/aaronkapor/repos/php/sandbox/strings_functions.php",
+		"/Users/aaronkapor/repos/php/index.html",
+		"/Users/aaronkapor/repos/php/sandbox/type_juggling.php",
+		"/Users/aaronkapor/repos/php/sandbox/basic.html",
+		"/Users/aaronkapor/repos/php/my_phpinfo.php",
+		"/Users/aaronkapor/repos/php/helloworld.php",
+		"/Users/aaronkapor/repos/_code/basic.html",
+		"/Users/aaronkapor/Library/Application Support/Sublime Text/Packages/HTML/Snippets/html.sublime-snippet",
+		"/Users/aaronkapor/repos/pageo_farms/css/topnav.css",
+		"/Users/aaronkapor/repos/pageo_farms/css/styles.css",
+		"/Users/aaronkapor/repos/pageo_farms/giftshop.html",
+		"/Users/aaronkapor/repos/pageo_farms/about.html",
+		"/Users/aaronkapor/repos/pageo_farms/index_test.html",
+		"/Users/aaronkapor/repos/pageo_farms/gallery.html",
+		"/Users/aaronkapor/repos/pageo_farms/index.html",
+		"/Users/aaronkapor/repos/pageo_farms/phm.html",
+		"/Users/aaronkapor/repos/pageo_farms/weddings.html",
+		"/Users/aaronkapor/repos/pageo/pageo.sublime-project",
+		"/Users/aaronkapor/Celeste2.sublime-color-scheme",
+		"/Users/aaronkapor/Breakers2.sublime-color-scheme",
+		"/Users/aaronkapor/Mariana.sublime-color-scheme",
+		"/Users/aaronkapor/Library/Application Support/Sublime Text/Packages/User/Mariana.sublime-color-scheme",
+		"/Users/aaronkapor/repos/ak_site/css/styles.css",
+		"/Users/aaronkapor/repos/ak_site/_layouts/default.html",
+		"/Users/aaronkapor/repos/ak_site/tags/index.html",
+		"/Users/aaronkapor/repos/ak_site/_layouts/archives.html",
+		"/Users/aaronkapor/repos/ak_site/index.html",
+		"/Users/aaronkapor/repos/ak_site/_layouts/home.html",
+		"/Users/aaronkapor/repos/blog/_layouts/post.html",
+		"/Users/aaronkapor/repos/blog/_config.yml",
+		"/Users/aaronkapor/repos/blog/_posts/2023-09-11-welcome-to-jekyll.md",
+		"/Users/aaronkapor/repos/gtesting_tut/index.html",
+		"/Users/aaronkapor/repos/_code/tutorials-local/Lynda - Jekyll for Web Designers/Exercice Files/Ex_Files_Jekyll_WebDesign/Exercise Files/Chapter-03/03-02/post.html",
+		"/Users/aaronkapor/repos/_code/tutorials-local/Lynda - Jekyll for Web Designers/Exercice Files/Ex_Files_Jekyll_WebDesign/Exercise Files/Chapter-03/03-02/index.html",
+		"/Users/aaronkapor/repos/git_testing/index.html",
+		"/Users/aaronkapor/repos/git_testing/_css/main.css",
+		"/Volumes/work/_resources/tutorials-server/[GEN] Lynda - GitHub for Web Designers (2014)/exercise_files/Chapter_02/02_07/index.html",
+		"/Volumes/work/_resources/tutorials-server/[GEN] Lynda - GitHub for Web Designers (2014)/exercise_files/Chapter_02/02_14/index.html",
+		"/Users/aaronkapor/repos/git_testing/_scripts/respond.min.js",
+		"/Users/aaronkapor/repos/git_testing/_scripts/modernizr-custom.js",
+		"/Users/aaronkapor/repos/git_testing/_scripts/scripts.js"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tu.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
