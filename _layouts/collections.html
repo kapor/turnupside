@@ -1,0 +1,33 @@
+---
+layout: default
+title: post
+---
+
+
+<article class="posts">
+	<article role="article">
+<!--
+		<div class="back_button">
+				<a onclick="window.history.back()">
+				Back
+				</a>
+		</div>
+-->
+		<header>
+			<h3>
+				{{page.title}}: {{page.category}}
+			</h3>
+			<time itemprop="dateCreated" datetime="{{page.date}}">
+				{{page.date | date: "%B %Y"}} + {{ page.loc }}
+			</time>
+		</header>
+
+			{{content}}
+
+		<footer>
+			<p>{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}{% endunless %} {% endfor %}</p>
+		</footer>
+
+	</article>
+</article>
+

@@ -1,0 +1,25 @@
+
+
+
+<!-- ++++++ menu list ++++++ -->
+<table id="menu_grid">
+
+	<tr id="menu_header">
+		<th class="menu_header">Project</th>
+		<th class="menu_header">Category</th>
+		<th class="menu_header">Location</th>
+	</tr>
+	{% assign posts = site.posts %}
+	{% for post in posts %}
+	<tr class="menu_row_mobile" style="transform: rotate(0);">
+		<td class="menu_data1">
+		<a id="mygrid_data_column_1" href="{{site.baseurl}}{{post.url}}" class="stretched-link";>{{post.category}}
+		</a>
+		</td>
+		<td class="menu_data2">{{post.type}}</td>
+		</a>
+	</tr>
+	{% endfor %}
+</table>
+
+

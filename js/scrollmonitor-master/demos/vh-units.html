@@ -1,0 +1,64 @@
+<!doctype html>
+<head>
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.whats-in {
+			position: fixed;
+			background: #FFF;
+			padding: 20px;
+			top: 50%;
+			left: 20;
+			font-size: 40px;
+			margin: auto;
+		}
+		span {
+			display: block;
+			height: 600px;
+			background-color: dodgerblue;
+			color: white;
+			font-size: 200px;
+		}
+		span.two {
+			background-color: limegreen;
+		}
+		span.three {
+			background-color: maroon;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div class="whats-in"></div>
+	<span class="one">One!</span>
+	<span class="two">Two!</span>
+	<span class="three">Three!</span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script type="text/javascript">
+	requirejs(['../dist/umd/index.js'], function () {
+		var watchers;
+		function update () {
+			var string = watchers.reduce(function (string, watcher) {
+				if (watcher.isInViewport) {
+					return string + ' ' + watcher.watchItem.innerHTML;
+				}
+				return string;
+			}, '');
+			$('.whats-in').html(string + ' is everywhere oh golly!');
+		}
+		watchers = $('span').toArray().map(function(element) {
+			var watcher = scrollMonitor.create(element);
+			watcher.stateChange(update);
+			return watcher;
+		});
+
+		update();
+	})
+
+</script>
+</body>

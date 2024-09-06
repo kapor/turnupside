@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Atlas Typewriter Web';
+	src: url('AtlasTypewriter-Light-Web.woff2') format('woff2'),
+		 url('AtlasTypewriter-Light-Web.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	}
+
+.AtlasTypewriter-Light-Web {
+	font-family: 'Atlas Typewriter Web';
+	font-weight: 300;
+	font-style: normal;
+	}

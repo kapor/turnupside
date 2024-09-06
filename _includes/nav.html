@@ -1,0 +1,291 @@
+
+
+<div id="navbar" class="sticky">
+	<td colspan="3">
+		<div class="column left_column" id="col_1">
+			<a href="{{site.baseurl}}/index.html">
+			TURN UPSIDE
+			</a>
+		</div>
+		<div class="column mid_column" id="col_2">
+			{% if page.title == 'ak_site' %}
+			Working
+			{% else %}
+			<&nbsp;<a onclick="window.history.back()">Back</a>&nbsp;/&nbsp;<a href="{{site.baseurl}}/index.html">main</a>
+			{% endif %}
+		</div>
+		<div class="column right_column" id="col_3">
+			Information
+		</div> 
+		<div class="column right_column" id="col_4">
+    	<span class="info_close"><img src="{{ site.baseurl }}/images/close_large.svg"></span>
+		</div>       
+	</td>
+</div>
+<div class="nav_back"></div>
+
+<div class="overlay_back">
+	<div class="info_overlay_left">
+	</div>
+	<div class="info_overlay">
+		<div class="info_overlay_inner">
+			{% include info.html %}
+		</div>
+	</div>
+</div>
+
+<div class="modal_back_left"></div>
+<div class="modal_back_right"></div>
+
+
+<div id="navbar_mobile" class="sticky">
+	<td colspan="2">
+		<div class="column left_column" id="col_1_mobile">
+			<a href="{{site.baseurl}}/index.html">
+			Aaron Kapor
+			</a>
+		</div>
+		<div class="column right_column" id="col_2_mobile">
+			<img src="{{ site.baseurl }}/images/icon/24x24_ham2.svg">
+		</div>
+	</td>
+</div>
+
+
+<div class="sticky">
+	<div class="menu_grid_mobile">
+		<div id="closebutton">
+			<img src="{{ site.baseurl }}/images/icon/24x24_close.svg">
+		</div>
+			{% include sidebar_mobile.html %}
+	</div>
+</div>
+
+<div class="mob_white_back">
+
+</div>
+
+
+
+<script>
+
+// mobile menu
+var col1_mob = document.getElementById("col_1_mobile");
+var col2_mob = document.getElementById("col_2_mobile");
+var col3_mob = document.getElementById("col_3_mobile");
+var menu_close = document.getElementById("closebutton");
+var menu_grid = document.getElementsByClassName("menu_grid_mobile")[0];
+var menu_back = document.getElementsByClassName("overlay_back")[0];
+var menu_link = document.getElementById("mygrid_data_column_1")[0];
+var sticky = document.getElementsByClassName("sticky")[0];
+var mob_white_back = document.getElementsByClassName("mob_white_back")[0];
+
+
+// FUNCTIONS
+function openMenu() {
+	setTimeout(() => { menu_grid.style.display = "block"}, 0);
+	setTimeout(() => { menu_grid.style.opacity = "1"}, 0);
+	setTimeout(() => { menu_grid.style.height = "100%" }, 0);
+	setTimeout(() => { navbar_mobile.style.display = "none"}, 0);
+	setTimeout(() => { navbar_mobile.style.width = "0"}, 0);
+	setTimeout(() => { menu_close.style.display = "block"}, 0);
+	setTimeout(() => { menu_back.style.opacity = "1"}, 70);
+	setTimeout(() => { sticky.style.height = "100vh" }, 0);
+	setTimeout(() => { mob_white_back.style.height = "100vh" }, 0);
+}
+
+function closeMenu() {
+	setTimeout(() => { menu_grid.style.display = "none"}, 0);
+	setTimeout(() => { menu_grid.style.opacity = "0"}, 0);
+	setTimeout(() => { menu_grid.style.height = "0" }, 0);
+	setTimeout(() => { navbar_mobile.style.display = "block"}, 0);
+	setTimeout(() => { navbar_mobile.style.width = "100%"}, 0);
+	setTimeout(() => { menu_close.style.display = "none"}, 0);
+	setTimeout(() => { menu_back.style.opacity = "0"}, 70);
+	setTimeout(() => { sticky.style.height = "0vh" }, 0);
+	setTimeout(() => { mob_white_back.style.height = "0vh" }, 0);
+}
+
+
+
+
+col2_mob.addEventListener( "click", buttonEvent );
+function buttonEvent() {
+  openMenu();
+  col2_mob.removeEventListener( "click", buttonEvent );
+  setTimeout(() => {
+    menu_close.addEventListener( "click", closeMenuEvent );
+  }, 20);
+}
+
+
+function closeMenuEvent() {
+  setTimeout(() => {
+    menu_close.removeEventListener( "click", closeMenuEvent );
+		menu_link.removeEventListener( "click", closeMenuEvent );
+    col2_mob.addEventListener( "click", buttonEvent );
+  }, 20);
+  closeMenu();
+};
+
+
+
+
+
+
+
+</script>
+
+<!-- ++++++++++ HIDE MENU GRID MOBILE AT 800+  ++++++++++ -->
+<script>
+
+	$(window).resize(function(){
+  if($(window).width() > 800){
+    $('.menu_grid_mobile').hide();
+  }else{
+    $('.menu_grid_mobile').show();
+  }
+});
+
+</script>
+
+
+
+<!-- ++++++++++ INFO MODAL ++++++++++ -->
+<script>
+// DESKTOP
+var btn = document.getElementById("col_3");
+var modalback = document.getElementsByClassName("overlay_back")[0];
+var modal = document.getElementsByClassName("info_overlay")[0];
+var modal_left = document.getElementsByClassName("info_overlay_left")[0];
+var close = document.getElementsByClassName("info_close")[0];
+var rightcol = document.getElementById("col_3");
+var midcol = document.getElementById("col_2");
+var hidcol = document.getElementById("col_4");
+var infopage = document.getElementById("info_page");
+var modal_back_left = document.getElementsByClassName("modal_back_left")[0];
+var modal_back_right = document.getElementsByClassName("modal_back_right")[0];
+
+
+
+// FUNCTIONS
+
+function openModal() {
+	modalback.style.display = "block";
+	setTimeout(() => { hidcol.style.display = "inline-block"}, 20);
+	setTimeout(() => { midcol.style.display = "none"}, 0);
+	setTimeout(() => { rightcol.style.cursor = "auto"}, 20);
+	setTimeout(() => { modalback.style.opacity = "1"}, 20);
+	setTimeout(() => { modal.style.height = "100%" }, 70);
+	setTimeout(() => { modal_left.style.height = "100%" }, 70)
+	setTimeout(() => { modal_back_left.style.height = "100%" }, 70);
+	setTimeout(() => { modal_back_left.style.opacity = "100%"}, 20);
+	setTimeout(() => { modal_back_right.style.height = "100%" }, 70);
+	setTimeout(() => { modal_back_right.style.opacity = "100%"}, 20);
+	setTimeout(() => { infopage.style.display = "inline-block" }, 50);
+}
+
+function closeModal() {
+	setTimeout(() => { rightcol.style.cursor = "pointer"}, 20);
+	setTimeout(() => { hidcol.style.display = "none"}, 20);
+	setTimeout(() => { midcol.style.width = "33.33%" }, 0);
+	setTimeout(() => { midcol.style.display = "inline-block"}, 20);
+	setTimeout(() => { modal.style.height = "0" }, 10);
+	setTimeout(() => { modal_left.style.height = "0" }, 10);
+	setTimeout(() => { modalback.style.opacity = "0"}, 20);
+	setTimeout(() => { modalback.style.display = "none" }, 140);
+	setTimeout(() => { modal_back_left.style.height = "0" }, 10);
+	setTimeout(() => { modal_back_left.style.opacity = "0"}, 20);
+	setTimeout(() => { modal_back_right.style.height = "0" }, 10);
+	setTimeout(() => { modal_back_right.style.opacity = "0"}, 20);
+	setTimeout(() => { infopage.style.display = "none" }, 0);
+}
+
+
+
+
+btn.addEventListener( "click", buttonEvent );
+function buttonEvent() {
+  openModal();
+  btn.removeEventListener( "click", buttonEvent );
+  setTimeout(() => {
+    close.addEventListener( "click", closeModalEvent );
+    window.addEventListener( "click", closeModalEvent2 );
+  }, 20);
+}
+
+
+function closeModalEvent() {
+  setTimeout(() => {
+    close.removeEventListener( "click", closeModalEvent );
+    window.removeEventListener( "click", closeModalEvent2 );
+    btn.addEventListener( "click", buttonEvent );
+  }, 20);
+  closeModal();
+}
+
+function closeModalEvent2() {
+  if (event.target == modal_left) {
+    setTimeout(() => {
+      close.removeEventListener( "click", closeModalEvent );
+      window.removeEventListener( "click", closeModalEvent2 );
+      btn.addEventListener( "click", buttonEvent );
+    }, 20);
+    closeModal();
+  }
+}
+
+document.addEventListener('keyup',function(e){
+    if (e.key === "Escape") { 
+        // hide modal code
+        closeModalEvent()
+    }
+});
+
+
+</script>
+
+
+
+<!-- ++++++++++ DISABLE SCROLLBAR ++++++++++ -->
+
+<script type="text/javascript">
+$('#col_3').click(function(){
+	$('.lotsofstuff').css("overflow", "hidden");
+	$('body').css("overflow", "hidden");
+});
+
+
+$('.info_overlay_left').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+$('.info_close').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+$(document).keyup(function(e) {
+ if (e.key === "Escape") { 
+    $('body').css("overflow", "visible");
+  }
+});
+
+$('#col_2_mobile').click(function(){
+	$('#big_2').css("overflow", "hidden");
+	$('body').css("overflow", "hidden");
+	$('.menu_grid_mobile').css("overflow", "scroll");
+});
+
+$('.mygrid_data_column_1').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+$('#closebutton').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+
+
+
+
+</script>

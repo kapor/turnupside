@@ -1,75 +1,748 @@
-<html>
+<!DOCTYPE html>
+
+<!-- kapor_did_this -->
 <head>
-<title>TU RN UP SI DE</title>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link rel="stylesheet" href="https://use.typekit.net/cbr6gcc.css">
-
-<style>
-body {
-	background: #6219FF;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.style1 {
-	font-family: "orator-std", monospace;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 80px;
-	line-height: 80px;
-	letter-spacing: 4px;
-	color: #6219FF;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
-a:link {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-	color: #FFFFFF;
-}
-a:hover {
-	text-decoration: none;
-	color: #FFFFFF;
-}
-a:active {
-	text-decoration: none;
-	color: #FFFFFF;
-}
-.style2 {
-	color: #FFFFFF
-}
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<title>AK</title> 
+<meta name="description" content="ak_site">
+<link rel="canonical" href="/">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script rel="stylesheet" href="/js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2010.07.06dev/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/fonts/AtlasTypewriter-Light-Web.css">
+<link rel="stylesheet" href="https://use.typekit.net/bff2sws.css">
+<link rel="shortcut icon" type="image/x-icon" href="/images/icon/favicon.svg">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/special.css">
+<link rel="stylesheet" href="/css/special_panda.css">
+<link rel="stylesheet" href="/css/iop.css">
+<link rel="stylesheet" href="/css/hp.css">
+<link rel="stylesheet" href="/css/matter.css">
+<link rel="stylesheet" href="/css/fonts/fonts.css">
 
 
-.center {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-	magin: auto;
-}
+<!-- ++++++++++ SIDE-BAR NAV STATES ++++++++++ -->
+
+<script type="text/javascript">
+
+let elements = ['.menu_row', '#mygrid_data_column_1'];
+
+// Add class on mouseover
+document.querySelectorAll(elements).forEach(element => {
+	element.addEventListener('mouseover', () => {
+		element.classList.add(':hover');
+	}); 
+});
+
+// Remove class on mouseout
+document.querySelectorAll(elements).forEach(element => {
+	element.addEventListener('mouseout', () => {
+		element.classList.remove(':hover');
+	});
+});
+
+</script>
+
+<!-- ++++++++++ MENU SCROLL INDICATOR ++++++++++ -->
 
 
-</style>
+
+
+
+<script type="text/javascript">
+
+
+
+var container = document.getElementById("big_2"),
+	element = document.getElementsByTagName("section"),
+    menu_row = document.getElementsByClassName("menu_row"),
+    i;
+
+const padding = container - 320;
+
+function checkInView(container, element) {
+
+    //Get container properties
+    let cTop = container.scrollTop;
+    let cBottom = cTop + container.clientHeight;
+    //Get element properties
+    let eTop = element.offsetTop - container.offsetTop;
+    let eBottom = eTop + element.clientHeight;
+    //Check if in view    
+    let isTotal = (eTop >= cTop && eBottom <= cBottom);
+
+};
+
+
+document.onscroll = function () {
+    
+    for ( i = 0 ; i < element.length ; i++ ) {
+        
+        if ( window.scrollY > element[i].offsetTop + padding && window.scrollY < element[i].offsetTop + element[i].clientHeight + padding ) {
+            menu_row[i].classList.add("menu_row_active");
+            //console.log("Truthy");
+        }
+        else {
+            menu_row[i].classList.remove("menu_row_active");
+            //console.log("Equal to true");
+        }
+    }
+};
+
+
+</script>
+
+
 </head>
-<body bgcolor="#444444">
-	<table border="0" cellpadding="0" height="100%" width="100%">
-		<tbody>
-			<tr>
-				<td bgcolor="#FFFFF6">
-					<div class="center">					
-					    <p class="style1">turn upside</p>					    
-						<p class="style1">TURNUP SIDE</p>
-						<p class="style1" style="transform: rotate(180deg);">TURNUP SIDE</p>						
-						<p class="style1" style="transform: rotate(180deg);">turn upside</p>
-					</div>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+<body class="no-scroll">
+
+
+
+<!-- ++++++++++ nav ++++++++++ -->
+
+
+
+<div id="navbar" class="sticky">
+	<td colspan="3">
+		<div class="column left_column" id="col_1">
+			<a href="/index.html">
+			TURN UPSIDE
+			</a>
+		</div>
+		<div class="column mid_column" id="col_2">
+			
+			<&nbsp;<a onclick="window.history.back()">Back</a>&nbsp;/&nbsp;<a href="/index.html">main</a>
+			
+		</div>
+		<div class="column right_column" id="col_3">
+			Information
+		</div> 
+		<div class="column right_column" id="col_4">
+    	<span class="info_close"><img src="/images/close_large.svg"></span>
+		</div>       
+	</td>
+</div>
+<div class="nav_back"></div>
+
+<div class="overlay_back">
+	<div class="info_overlay_left">
+	</div>
+	<div class="info_overlay">
+		<div class="info_overlay_inner">
+			
+<div id="info_page">
+	<div class="info_col_1">
+		<p>
+			<h5 class="info_header">
+				About Aaron
+			</h5>
+		</p>
+		<p>
+		Aaron is a multi-disciplinary designer with a focus on product design. With over 15+ years in the field, he’s had the opportunity to work with agencies, consultancies, in-house and non-profits but currently prefers helping out smaller start-up teams. Some previous experiences include IDEO, Google, R/GA, Frog, Verizon, Citi, GE, Betaworks and Instapaper.
+		</p>
+		<p>
+		At the moment he resides in California with his wife Tina and two parrots, Taco and Burrito.
+		</p>
+		<p>
+		<div>
+			aaronkapor@gmail.com
+		</div>
+		<div>
+			209.604.7702
+		</div>
+		</p>
+	</div>
+
+	<div class="info_col_2">
+		<p>
+			<h5 class="info_header">
+				About This Site
+			</h5>
+		</p>
+		<p>
+			This site is an evolving work-in-progress with selected samples from current and past projects. Equal parts process and final deliverables, it’s meant to showcase thought patterns that are unique for each project in order to create a true variety of work. It was coded and compiled with Jekyll.
+		</p>
+		<p>
+			<div>
+			  Sans-Serif: <a href="https://commercialtype.com/catalog/atlas_grotesk" target="_blank"><span style="color: #6219FF; background-color: #fff">Atlas Grotesk</span></a>
+			</div>
+			<div>
+			  Monospace: <a href="https://commercialtype.com/catalog/atlas_typewriter" target="_blank"><span style="color: #6219FF; background-color: #fff">Atlas Typewriter</span></a>
+			</div>
+		</p>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal_back_left"></div>
+<div class="modal_back_right"></div>
+
+
+<div id="navbar_mobile" class="sticky">
+	<td colspan="2">
+		<div class="column left_column" id="col_1_mobile">
+			<a href="/index.html">
+			Aaron Kapor
+			</a>
+		</div>
+		<div class="column right_column" id="col_2_mobile">
+			<img src="/images/icon/24x24_ham2.svg">
+		</div>
+	</td>
+</div>
+
+
+<div class="sticky">
+	<div class="menu_grid_mobile">
+		<div id="closebutton">
+			<img src="/images/icon/24x24_close.svg">
+		</div>
+			
+
+
+<!-- ++++++ menu list ++++++ -->
+<table id="menu_grid">
+
+	<tr id="menu_header">
+		<th class="menu_header">Project</th>
+		<th class="menu_header">Category</th>
+		<th class="menu_header">Location</th>
+	</tr>
+	
+	
+	<tr class="menu_row_mobile" style="transform: rotate(0);">
+		<td class="menu_data1">
+		<a id="mygrid_data_column_1" href="/appreciate/panda_2" class="stretched-link";>Panda_2
+		</a>
+		</td>
+		<td class="menu_data2">Brand/Product</td>
+		</a>
+	</tr>
+	
+	<tr class="menu_row_mobile" style="transform: rotate(0);">
+		<td class="menu_data1">
+		<a id="mygrid_data_column_1" href="/booklist/ongoing" class="stretched-link";>Booklist
+		</a>
+		</td>
+		<td class="menu_data2">Product</td>
+		</a>
+	</tr>
+	
+</table>
+
+
+
+	</div>
+</div>
+
+<div class="mob_white_back">
+
+</div>
+
+
+
+<script>
+
+// mobile menu
+var col1_mob = document.getElementById("col_1_mobile");
+var col2_mob = document.getElementById("col_2_mobile");
+var col3_mob = document.getElementById("col_3_mobile");
+var menu_close = document.getElementById("closebutton");
+var menu_grid = document.getElementsByClassName("menu_grid_mobile")[0];
+var menu_back = document.getElementsByClassName("overlay_back")[0];
+var menu_link = document.getElementById("mygrid_data_column_1")[0];
+var sticky = document.getElementsByClassName("sticky")[0];
+var mob_white_back = document.getElementsByClassName("mob_white_back")[0];
+
+
+// FUNCTIONS
+function openMenu() {
+	setTimeout(() => { menu_grid.style.display = "block"}, 0);
+	setTimeout(() => { menu_grid.style.opacity = "1"}, 0);
+	setTimeout(() => { menu_grid.style.height = "100%" }, 0);
+	setTimeout(() => { navbar_mobile.style.display = "none"}, 0);
+	setTimeout(() => { navbar_mobile.style.width = "0"}, 0);
+	setTimeout(() => { menu_close.style.display = "block"}, 0);
+	setTimeout(() => { menu_back.style.opacity = "1"}, 70);
+	setTimeout(() => { sticky.style.height = "100vh" }, 0);
+	setTimeout(() => { mob_white_back.style.height = "100vh" }, 0);
+}
+
+function closeMenu() {
+	setTimeout(() => { menu_grid.style.display = "none"}, 0);
+	setTimeout(() => { menu_grid.style.opacity = "0"}, 0);
+	setTimeout(() => { menu_grid.style.height = "0" }, 0);
+	setTimeout(() => { navbar_mobile.style.display = "block"}, 0);
+	setTimeout(() => { navbar_mobile.style.width = "100%"}, 0);
+	setTimeout(() => { menu_close.style.display = "none"}, 0);
+	setTimeout(() => { menu_back.style.opacity = "0"}, 70);
+	setTimeout(() => { sticky.style.height = "0vh" }, 0);
+	setTimeout(() => { mob_white_back.style.height = "0vh" }, 0);
+}
+
+
+
+
+col2_mob.addEventListener( "click", buttonEvent );
+function buttonEvent() {
+  openMenu();
+  col2_mob.removeEventListener( "click", buttonEvent );
+  setTimeout(() => {
+    menu_close.addEventListener( "click", closeMenuEvent );
+  }, 20);
+}
+
+
+function closeMenuEvent() {
+  setTimeout(() => {
+    menu_close.removeEventListener( "click", closeMenuEvent );
+		menu_link.removeEventListener( "click", closeMenuEvent );
+    col2_mob.addEventListener( "click", buttonEvent );
+  }, 20);
+  closeMenu();
+};
+
+
+
+
+
+
+
+</script>
+
+<!-- ++++++++++ HIDE MENU GRID MOBILE AT 800+  ++++++++++ -->
+<script>
+
+	$(window).resize(function(){
+  if($(window).width() > 800){
+    $('.menu_grid_mobile').hide();
+  }else{
+    $('.menu_grid_mobile').show();
+  }
+});
+
+</script>
+
+
+
+<!-- ++++++++++ INFO MODAL ++++++++++ -->
+<script>
+// DESKTOP
+var btn = document.getElementById("col_3");
+var modalback = document.getElementsByClassName("overlay_back")[0];
+var modal = document.getElementsByClassName("info_overlay")[0];
+var modal_left = document.getElementsByClassName("info_overlay_left")[0];
+var close = document.getElementsByClassName("info_close")[0];
+var rightcol = document.getElementById("col_3");
+var midcol = document.getElementById("col_2");
+var hidcol = document.getElementById("col_4");
+var infopage = document.getElementById("info_page");
+var modal_back_left = document.getElementsByClassName("modal_back_left")[0];
+var modal_back_right = document.getElementsByClassName("modal_back_right")[0];
+
+
+
+// FUNCTIONS
+
+function openModal() {
+	modalback.style.display = "block";
+	setTimeout(() => { hidcol.style.display = "inline-block"}, 20);
+	setTimeout(() => { midcol.style.display = "none"}, 0);
+	setTimeout(() => { rightcol.style.cursor = "auto"}, 20);
+	setTimeout(() => { modalback.style.opacity = "1"}, 20);
+	setTimeout(() => { modal.style.height = "100%" }, 70);
+	setTimeout(() => { modal_left.style.height = "100%" }, 70)
+	setTimeout(() => { modal_back_left.style.height = "100%" }, 70);
+	setTimeout(() => { modal_back_left.style.opacity = "100%"}, 20);
+	setTimeout(() => { modal_back_right.style.height = "100%" }, 70);
+	setTimeout(() => { modal_back_right.style.opacity = "100%"}, 20);
+	setTimeout(() => { infopage.style.display = "inline-block" }, 50);
+}
+
+function closeModal() {
+	setTimeout(() => { rightcol.style.cursor = "pointer"}, 20);
+	setTimeout(() => { hidcol.style.display = "none"}, 20);
+	setTimeout(() => { midcol.style.width = "33.33%" }, 0);
+	setTimeout(() => { midcol.style.display = "inline-block"}, 20);
+	setTimeout(() => { modal.style.height = "0" }, 10);
+	setTimeout(() => { modal_left.style.height = "0" }, 10);
+	setTimeout(() => { modalback.style.opacity = "0"}, 20);
+	setTimeout(() => { modalback.style.display = "none" }, 140);
+	setTimeout(() => { modal_back_left.style.height = "0" }, 10);
+	setTimeout(() => { modal_back_left.style.opacity = "0"}, 20);
+	setTimeout(() => { modal_back_right.style.height = "0" }, 10);
+	setTimeout(() => { modal_back_right.style.opacity = "0"}, 20);
+	setTimeout(() => { infopage.style.display = "none" }, 0);
+}
+
+
+
+
+btn.addEventListener( "click", buttonEvent );
+function buttonEvent() {
+  openModal();
+  btn.removeEventListener( "click", buttonEvent );
+  setTimeout(() => {
+    close.addEventListener( "click", closeModalEvent );
+    window.addEventListener( "click", closeModalEvent2 );
+  }, 20);
+}
+
+
+function closeModalEvent() {
+  setTimeout(() => {
+    close.removeEventListener( "click", closeModalEvent );
+    window.removeEventListener( "click", closeModalEvent2 );
+    btn.addEventListener( "click", buttonEvent );
+  }, 20);
+  closeModal();
+}
+
+function closeModalEvent2() {
+  if (event.target == modal_left) {
+    setTimeout(() => {
+      close.removeEventListener( "click", closeModalEvent );
+      window.removeEventListener( "click", closeModalEvent2 );
+      btn.addEventListener( "click", buttonEvent );
+    }, 20);
+    closeModal();
+  }
+}
+
+document.addEventListener('keyup',function(e){
+    if (e.key === "Escape") { 
+        // hide modal code
+        closeModalEvent()
+    }
+});
+
+
+</script>
+
+
+
+<!-- ++++++++++ DISABLE SCROLLBAR ++++++++++ -->
+
+<script type="text/javascript">
+$('#col_3').click(function(){
+	$('.lotsofstuff').css("overflow", "hidden");
+	$('body').css("overflow", "hidden");
+});
+
+
+$('.info_overlay_left').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+$('.info_close').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+$(document).keyup(function(e) {
+ if (e.key === "Escape") { 
+    $('body').css("overflow", "visible");
+  }
+});
+
+$('#col_2_mobile').click(function(){
+	$('#big_2').css("overflow", "hidden");
+	$('body').css("overflow", "hidden");
+	$('.menu_grid_mobile').css("overflow", "scroll");
+});
+
+$('.mygrid_data_column_1').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+$('#closebutton').click(function(){
+	$('body').css("overflow", "visible");
+});
+
+
+
+
+
+</script>
+
+<!-- ++++++++++ main content ++++++++++ -->
+
+<div class="lotsofstuff">
+	<div id="big_1">
+
+	
+
+
+<!-- ++++++ menu list ++++++ -->
+<table id="menu_grid">
+	<tr>
+		<th class="menu_header">Project</th>
+		<th class="menu_header">Type</th>
+		<th class="menu_header" id="menu_header_column_3">Size</th>
+	</tr>
+	
+	
+	<tr class="menu_row" style="transform: rotate(0);">
+		<td class="menu_data">
+		<a id="mygrid_data_column_1" href="/appreciate/panda_2" class="stretched-link";>Panda_2
+		</a>
+		</td>
+		<td class="menu_data" id="mygrid_data_column_2">Brand/Product</td>
+		<td class="menu_data" id="mygrid_data_column_3">Large</td>
+		</a>
+	</tr>
+	
+	<tr class="menu_row" style="transform: rotate(0);">
+		<td class="menu_data">
+		<a id="mygrid_data_column_1" href="/booklist/ongoing" class="stretched-link";>Booklist
+		</a>
+		</td>
+		<td class="menu_data" id="mygrid_data_column_2">Product</td>
+		<td class="menu_data" id="mygrid_data_column_3">Large</td>
+		</a>
+	</tr>
+	
+</table>
+
+
+
+<!-- ++++++ tag cloud ++++++ -->
+<div class="tag_cloud">
+
+		
+		
+
+	<div class="menu_header_archive">Inventory</div>
+
+	<ul class="archives">
+		<li><a href="/tags/">All posts</a></li>
+		
+		<li><a href="/tags/#books">books: 1</a></li>
+		
+		<li><a href="/tags/#branding">branding: 1</a></li>
+		
+		<li><a href="/tags/#california">california: 1</a></li>
+		
+		<li><a href="/tags/#collections">collections: 1</a></li>
+		
+		<li><a href="/tags/#css">css: 1</a></li>
+		
+		<li><a href="/tags/#data">data: 1</a></li>
+		
+		<li><a href="/tags/#database">database: 1</a></li>
+		
+		<li><a href="/tags/#design">design: 1</a></li>
+		
+		<li><a href="/tags/#identity">identity: 1</a></li>
+		
+		<li><a href="/tags/#illustration">illustration: 1</a></li>
+		
+		<li><a href="/tags/#ongoing">ongoing: 1</a></li>
+		
+		<li><a href="/tags/#product">product: 2</a></li>
+		
+		<li><a href="/tags/#system">system: 2</a></li>
+		
+		<li><a href="/tags/#ux">ux: 2</a></li>
+		
+	</ul>
+
+</div>
+
+	</div>
+
+	<div id="big_2">
+
+	
+
+<section class="home_section">
+
+	<header class="home_header">
+		<h3><a href="/appreciate/panda_2" title="it's ok.">Appreciate / Panda_2</a></h3>
+		
+		<!-- <time itemprop="dateCreated" datetime="2023-01-03 00:00:00 -0800">
+			2023 + New York
+		</time> -->
+
+		<!-- <time>
+			New York | Brand/Product | Large
+		</time>  -->
+	
+	</header> 
+
+	
+	<!-- if there's an image added to front matter, display it -->
+	<a href="/appreciate/panda_2" title="it's ok.">
+		<div class="thumb_post" style="background-image: url( /images/thumbs/app_panda2.png );">
+			<!-- <a href="/appreciate/panda_2" title="it's ok, click me."><img src="/images/thumbs/app_panda2.png"></a> -->
+		</div>
+	</a>
+	
+
+	<p class="home_excerpt">
+		<a href="/appreciate/panda_2">
+
+"Project Panda" was the working name used for multiple streams of branding work done for the start-up Appreciate.
+
+
+</a><a href="/appreciate/panda_2" title="read more" class="more">[...]
+		</a>
+	</p>
+
+
+	<footer class="home_footer">
+		<p>
+			
+				<a href="/tags/index.html#design" title="Posts tagged design">design</a>
+			 
+				<a href="/tags/index.html#product" title="Posts tagged product">product</a>
+			 
+				<a href="/tags/index.html#ux" title="Posts tagged ux">ux</a>
+			 
+				<a href="/tags/index.html#system" title="Posts tagged system">system</a>
+			 
+				<a href="/tags/index.html#identity" title="Posts tagged identity">identity</a>
+			 
+				<a href="/tags/index.html#illustration" title="Posts tagged illustration">illustration</a>
+			 
+				<a href="/tags/index.html#branding" title="Posts tagged branding">branding</a>
+			 
+		</p>
+	</footer>
+
+</section>
+
+
+
+
+<section class="home_section">
+
+	<header class="home_header">
+		<h3><a href="/booklist/ongoing" title="it's ok.">Lulldull / Booklist</a></h3>
+		
+		<!-- <time itemprop="dateCreated" datetime="2023-01-01 00:00:00 -0800">
+			2023 + California
+		</time> -->
+
+		<!-- <time>
+			California | Product | Large
+		</time>  -->
+	
+	</header> 
+
+	
+	<!-- if there's an image added to front matter, display it -->
+	<a href="/booklist/ongoing" title="it's ok.">
+		<div class="thumb_post" style="background-image: url( /images/thumbs/booklist.png );">
+			<!-- <a href="/booklist/ongoing" title="it's ok, click me."><img src="/images/thumbs/booklist.png"></a> -->
+		</div>
+	</a>
+	
+
+	<p class="home_excerpt">
+		<a href="/booklist/ongoing">
+
+“Booklist” by Lulldull is an upcoming service being created for collectors to digitally organize and share libraries of print materials.
+
+
+</a><a href="/booklist/ongoing" title="read more" class="more">[...]
+		</a>
+	</p>
+
+
+	<footer class="home_footer">
+		<p>
+			
+				<a href="/tags/index.html#data" title="Posts tagged data">data</a>
+			 
+				<a href="/tags/index.html#product" title="Posts tagged product">product</a>
+			 
+				<a href="/tags/index.html#ux" title="Posts tagged ux">ux</a>
+			 
+				<a href="/tags/index.html#system" title="Posts tagged system">system</a>
+			 
+				<a href="/tags/index.html#california" title="Posts tagged california">california</a>
+			 
+				<a href="/tags/index.html#books" title="Posts tagged books">books</a>
+			 
+				<a href="/tags/index.html#collections" title="Posts tagged collections">collections</a>
+			 
+				<a href="/tags/index.html#database" title="Posts tagged database">database</a>
+			 
+				<a href="/tags/index.html#css" title="Posts tagged css">css</a>
+			 
+				<a href="/tags/index.html#ongoing" title="Posts tagged ongoing">ongoing</a>
+			 
+		</p>
+	</footer>
+
+</section>
+
+
+
+<div class="section_spacer">
+</div>
+
+
+
+
+
+
+	</div>
+</div>
+
+	<button onclick="topFunction()" id="top_button" class="top_button" title="top">TOP</button>
+<div class="left_white"></div>
+
+<!-- ++++++++++ CURRENT PAGE INDICATOR ++++++++++ -->
+
+<script type="text/javascript">
+const currentUrl = window.location.pathname+window.location.search;
+//let url = document.write(str.replace(/^(?:\/\/|[^/]+)*\//, ''));
+console.log(currentUrl);
+
+document.querySelectorAll("#mygrid_data_column_1").forEach((link) => {
+    if (link.href === window.location.href) {
+        link.parentNode.parentNode.classList.add("menu_highlight");
+        link.setAttribute("aria-current", "page");
+    }
+});
+
+
+
+
+</script>
+
+<!--+++++++++++++++++++++++ BACK TO TOP +++++++++++++++++++++++-->
+
+<script>
+
+window.addEventListener('scroll', function(e) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById('top_button').classList.add('scrolled');
+    } else {
+      document.getElementById('top_button').classList.remove('scrolled');
+    }
+});
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+
+
 </body>
 </html>
+
+

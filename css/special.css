@@ -1,0 +1,2361 @@
+ /* ak_site
+  v 2.0 - 10-2023
+*/
+
+.gs_container1 {
+	padding: 32px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    background-color: #EFEFE7;
+}
+
+@media screen and (max-width: 1200px) {
+    .gs_container1 {
+        border-radius: 0px;
+        padding: 24px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .gs_container1 {
+        border-radius: 0px;
+        padding: 20px 20px 24px 20px;
+    }
+}
+
+.grid_1_group {
+	padding: 0px;
+}
+
+
+.grid_1_row {
+	margin: 0px auto 4px auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 100%;
+}
+
+.grid_1_cell {
+	width: 100%;
+	float: left;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-style: normal;
+    font-weight: 300;
+    letter-spacing: .75px;
+	text-transform: none;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	background-color: #fff;
+    padding: 80px 20px 80px 20px;
+    flex: 33%;
+}
+
+.grid_1_cell img {
+	width: 40%;
+}
+
+@media screen and (max-width: 800px) {
+
+	.grid_1_cell img {
+		width: 50%;
+	}
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.grid_1_cell img {
+		width: 75%;
+	}
+
+}
+
+
+
+.grid_1_header {
+	width: 100%;
+	float: left;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-style: normal;
+    font-weight: 300;
+    letter-spacing: .75px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-size: 24px;
+	background-color: #fff;
+    padding: 40px 20px 40px 20px;
+    flex: 33%;
+}
+
+@media screen and (max-width: 800px) {
+
+	.grid_1_header {
+		font-size: 16px;
+	}
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.grid_1_header {
+		font-size: 14px;
+	}
+
+}
+
+
+/* +++++++++++++++++++++++++++++ */
+
+
+
+
+
+
+
+
+
+.grid_2_group {
+	margin: 0px auto 0px auto;
+}
+
+.grid_2_row {
+	margin: 0px auto 4px auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+
+	.grid_2_row {
+ 	   flex-direction: column;
+	}
+
+}
+
+.grid_2_cell {
+	width: 100%;
+	float: left;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-style: normal;
+    font-weight: 300;
+    letter-spacing: .75px;
+	text-transform: none;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	background-color: #fff;
+    flex: 100%;
+}
+
+
+
+
+
+/* +++++++++++++++++++++++++++++ */
+
+
+
+
+
+
+
+
+
+.grid_3_group {
+	margin: 0px auto 40px auto;
+}
+
+.grid_3_row {
+	margin: 0px auto 4px auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+	.grid_3_row {
+ 	   flex-direction: column;
+	}
+
+}
+
+.grid_3_cell {
+	width: 100%;
+	float: left;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-style: normal;
+    font-weight: 300;
+    letter-spacing: .75px;
+	text-transform: none;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	background-color: #fff;
+    flex: 100%;
+}
+
+
+.grid_3_cell img {
+	width: 30%;
+	margin: 40px;
+}
+
+
+
+
+
+/* +++++++++++++++++++++++++++++ */
+
+
+
+
+
+
+
+
+
+
+
+/* +++++++++++++++++++++++++++++ */
+
+
+
+
+.tagline_group {
+/*	margin: 40px auto 40px auto;*/
+	background-color: none;
+}
+
+
+.tagline_row {
+	margin: 0px auto 4px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 100%;
+	align-items: center;
+}
+
+
+.tagline_row img {
+	height: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.tagline_row {
+	    flex-direction: column;
+	}
+}
+
+
+
+
+
+.tagline {
+	width: 100%;
+	float: left;
+	min-height: 160px;
+	height: auto;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	letter-spacing: .75px;
+	display: flex;
+	text-transform: none;
+	color: #222;
+	text-decoration: none;
+	text-align: center;
+	font-size: 28px;
+	background-color: #EFEFE7;
+	padding: 0px 20px 0px 20px;
+	flex: 33%;
+	align-items: center;
+	justify-content: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+	.tagline {
+		min-height: 100px;
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.tagline {
+		min-height: 80px;
+		font-size: 20px;
+	}
+}
+
+
+
+
+.tagline img {
+	width: 40%;
+}
+
+
+.tagline_header {
+	width: 100%;
+	float: left;
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-style: normal;
+    font-weight: 400;
+    letter-spacing: 4px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-size: 32px;
+	background-color: #EFEFE7;
+    padding: 40px 20px 40px 20px;
+    flex: 33%;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+	.tagline_header {
+		font-size: 28px;
+		letter-spacing: 2px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+	.tagline_header {
+		font-size: 24px;
+		letter-spacing: 2px;
+	}
+
+}
+
+
+
+/* ++++++++++++ GUIDE ++++++++++++ */
+/* ++++++++++++ GUIDE ++++++++++++ */
+
+
+
+
+/*   –––––––––––––    */
+
+
+
+.style_guide_group {
+    margin: 0px;
+    padding: 40px 40px 80px 40px;
+    background-color: #fff;
+    border-bottom: #ccc dashed 1px;
+}
+
+.style_guide_group p {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-size: 13px;
+	line-height: 21px;
+	/*margin: 0px auto 30px 0px;*/
+	text-transform: none;
+	text-decoration: none;
+	text-align: left;
+	max-width: 480px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+	.style_guide_group {
+    	padding: 20px 20px 80px 20px;
+	    background-color: #fff;
+	    border-bottom: #ccc dashed 1px;
+	}
+
+	.style_guide_group p {
+		font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+		text-align: left;
+		font-size: 13px;
+		line-height: 22px;
+		padding-left: 0px;
+	    max-width: 100%;
+	}
+
+
+}
+/*
+@media screen and (max-width: 800px) {
+
+
+	.style_guide_group p {
+		font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+		text-align: left;
+		font-size: 14px;
+		line-height: 22px;
+		padding-left: 0px;
+	    max-width: 100%;
+	}
+
+
+}*/
+
+
+@media screen and (max-width: 600px) {
+
+
+	.style_guide_group {
+		padding: 20px 20px 40px 20px;
+		background-color: #fff;
+		border-bottom: #ccc dashed 1px;
+	}
+
+	.style_guide_group p {
+		font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+        text-align: left;
+        font-size: 12px;
+        line-height: 20px;
+        padding-left: 0px;
+        max-width: 100%;
+	}
+
+
+}
+
+
+
+.style_guide_row {
+	margin: 0px 0px 20px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;o;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style_guide_header {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    padding: 16px 0px 32px 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.style_guide_subhead {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 20px 0px 0px 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.style_guide_header {
+		font-size: 34px;
+        line-height: 40px;
+        padding: 10px 0px 28px 0px;
+	}
+
+	.style_guide_subhead {
+	    font-size: 20px;
+	    line-height: 24px;
+	    padding: 20px 0px 0px 0px;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+	.style_guide_header {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 20px 0px 20px 0px;
+	}
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+	.style_guide_header {
+        padding: 8px 0px 20px 0px;
+	}
+}
+
+
+
+.core_values {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 8px 0px 8px 0px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.core_values {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 20px 0px 8px 0px;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.core_values {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 20px 0px 0px 0px;
+	}
+}
+
+.ditto_group .values_description {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    max-width: 90%;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .ditto_group .values_description {
+        margin: 0px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .ditto_group .values_description {
+        font-family: 'Atlas Grotesk Web', sans-serif;
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: .5px;
+        max-width: 90%;
+        padding-bottom: 10px;
+        margin: 0px;
+    }
+}
+
+
+.values_row {
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.values_row {
+        padding: 0px 0px 0px 0px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        gap: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+.style_guide_left_3 {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-size: 13px;
+	line-height: 20px;
+	text-transform: none;
+	text-decoration: none;
+	text-align: left;
+	background-color: ;
+    flex: 100%;
+    width: 33.33%;
+    padding-bottom: 20px;
+}
+
+.style_guide_center_3 {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-size: 13px;
+	line-height: 20px;
+	text-transform: none;
+	text-decoration: none;
+	text-align: left;
+	background-color: ;
+    flex: 100%;
+    width: 33.33%;
+    padding-bottom: 20px;
+}
+
+.style_guide_right_3 {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-size: 13px;
+	line-height: 20px;
+	text-transform: none;
+	text-decoration: none;
+	text-align: left;
+	background-color: ;
+    flex: 100%;
+    width: 33.33%;
+    padding-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+.style_guide_left_2 {
+    flex: 100%;
+    width: 50%;
+}
+
+.style_guide_right_2 {
+    flex: 100%;
+    width: 50%;
+}
+
+.style_guide_right_3 {
+    flex: 100%;
+    width: 50%;
+}
+
+.style_guide_image {
+    display: flex;
+	justify-content: center;
+    flex: 100%;
+    width: 100%;
+  /*  max-width: 1000px;*/
+}
+
+
+
+
+
+
+.style_guide_subtitle {
+	flex: 100%;
+    width: auto;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 24px 0px 8px 0px;
+    /* padding-bottom: 8px; */
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+}
+
+
+.style_guide_small_row {
+	margin: 0px 0px 4px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+}
+
+.style_guide_small_4 {
+	background-color: ;
+    flex: 100%;
+    width: 25%;
+    flex-direction: column;
+}
+
+.style_guide_small_4 p {
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+
+
+
+.style_guide_small_2 {
+	width: 50%;
+}
+
+
+.color_spacer {
+	display: none;
+}
+
+
+.style_guide_color {
+	display: flex;
+    flex: 100%;
+    width: 20%;
+    flex-direction: column;
+}
+
+.style_guide_color p {
+    width: 100%;
+	margin: 0px;
+}
+
+.style_guide_color_row {
+	display: flex;
+    padding: 0px 0px 40px 0px;
+    flex: 100%;
+    width: 20%;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.color_title {
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-size: 16px;
+    padding: 20px 0px 10px 0px;
+}
+
+
+.color_specs_row {
+	display: flex;
+	flex-direction: column;
+}
+
+.color_specs {
+	padding: 10px 0px;
+}
+
+.color_specs_container {
+	display: felx;
+	flex-direction: column;
+}
+
+.color_square {
+	width: 100%;
+	height: 100%;
+}
+
+.color_square img {
+	width: 100%;
+	height: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+	.style_guide_color {
+		padding: 0px;
+	    flex: 100%;
+	    display: flex;
+	    flex-direction: row;
+	    width: 100%;
+		gap: 20px;
+	}
+
+	.style_guide_color img {
+	    display: flex;
+	    flex-direction: row;
+	    width: 25%;
+	}
+
+	.style_guide_color_row {
+		display: flex;
+	    flex: 100%;
+	    width: 100%;
+	    flex-direction: column;
+	    gap: 20px;
+	}
+
+	.color_title {
+		font-family: 'Atlas Grotesk Web', sans-serif;
+		font-size: 16px;
+	    padding: 0px 0px 16px 0px;
+	}
+
+	.color_specs {
+		padding: 0px 20px 0px 0px;
+	}
+
+	.color_specs_container {
+		display: flex;
+        width: 100%;
+        flex-direction: column;
+	}
+
+	.color_specs_row {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.color_square {
+        max-width: 25%;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+	}
+
+	.color_square img {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+	.style_guide_small_row {
+		margin: 0px 0px 4px 0px;
+	    height: auto;
+	    display: flex;
+	    flex-direction: row;
+	    gap: 0px;
+	    width: 100%;
+	}
+
+	.style_guide_subtitle {
+		flex: 100%;
+	    width: auto;
+	    border-bottom: 1px solid #ccc;
+	    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	    font-size: 13px;
+	    line-height: 20px;
+	    padding: 24px 0px 8px 0px;
+	    /* padding-bottom: 8px; */
+	    text-transform: uppercase;
+	    text-decoration: none;
+	    text-align: left;
+	}
+
+	.style_guide_row {
+ 	   flex-direction: column;
+ 	   gap: 0px;
+	}
+
+	.style_guide_right_2 {
+	    width: 100%;
+	}
+
+	.style_guide_left_2 {
+	    width: 100%;
+	}
+
+	.style_guide_right_3 {
+	    display: none;
+	}
+
+	.style_guide_image {
+		display: flex;
+		justify-content: center;
+		flex: 100%;
+		width: 100%;
+		max-width: 1000px;
+		padding-bottom: 20px;
+	}
+
+
+	.style_guide_small_4 p {
+		font-family: 'Atlas Grotesk Web', sans-serif;
+		text-align: left;
+		font-size: 14px;
+		line-height: 22px;
+		padding-left: 8px;
+	}
+
+	.color_square img {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .style_guide_color {
+        padding: 0px;
+        flex: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+	.color_square {
+        max-width: 100%;
+        max-height: 100px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+    .color_square img {
+		width: 100%;
+		height: 100%;
+	}
+
+
+}
+
+.logo_color_title {
+flex: 100%;
+    width: auto;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+}
+
+.logo_color_row {
+	display: flex;
+    padding: 0px;
+    flex: 100%;
+    max-width: 100%;
+    gap: 8px;
+    flex-direction: row;
+	margin: 0px 0px 0px 0px;
+	justify-content: space-between;
+}
+
+.logo_color_col {
+	width: 50%;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.logo_color_row2 {
+	margin: 20px 0px 4px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+}
+
+.logo_color_cell2 {
+/*	margin: 0px 20px 0px 20px;*/
+	width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	.logo_color_row2 {
+		display: flex;
+	    padding: 20px 0px 0px 0px;
+	    flex: 100%;
+	    max-width: 100%;
+	    gap: 20px;
+	    flex-direction: column;
+		margin: 0px 0px 0px 0px;
+		justify-content: flex-end;
+	}
+
+	.logo_color_col {
+		width: auto;
+		margin: 0px 0px 0px 0px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	
+}
+
+.proportion {
+	display: flex;
+	flex-direction: row;
+	margin: 20px 0px;
+}
+
+.proportion p {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0px;
+    text-transform: none;
+    text-decoration: none;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.proportion p {
+		font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	    font-size: 13px;
+	    line-height: 20px;
+	    margin: 0px;
+	    text-transform: none;
+	    text-decoration: none;
+	    text-align: left;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.proportion_1, .proportion_2, .proportion_3, .proportion_4, .proportion_5 {
+		min-height: 200px;
+	}
+
+}
+
+.proportion_col_40 {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	gap: 10px;
+}
+
+.proportion_col_15 {
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	gap: 10px;
+}
+
+.proportion_1 {
+	width: 100%;
+	background-color: #42145F;
+	min-height: 300px;
+	display: flex;
+}
+
+.proportion_2 {
+	width: 100%;
+	background-color: #CB0044;
+	min-height: 300px;
+	display: flex;
+}
+
+.proportion_3 {
+	width: 100%;
+	background-color: #E7AEC6;
+	min-height: 300px;
+	display: flex;
+}
+
+.proportion_4 {
+	width: 100%;
+	background-color: #0094B3;
+	min-height: 300px;
+	display: flex;
+}
+
+.proportion_5 {
+	width: 100%;
+	background-color: #D4BA00;
+	min-height: 300px;
+	display: flex;
+}
+
+
+
+.icon_4_container {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	width: 100%;
+}
+
+.icon_4 {
+	display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+
+.icon_cell_container { 
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 16px 0px 16px;
+    background-color: #F7F7F2;
+
+}
+
+
+.icon_cell { 
+	display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 0px;
+}
+
+.icon_cell p {
+	text-align: center;
+	margin: 0px;
+	width: 100%;
+	height: 60px;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.icon_cell img { 
+	max-width: 40px;
+}
+
+
+
+.icon_2 {
+    width: 50%;
+    display: flex;
+    gap: 4px;
+    flex-direction: row;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+	.icon_2 {
+	    width: 100%;
+	    flex-direction: column;
+	}
+}
+
+
+
+.beliefs_description {
+	font-size: 14px;
+    line-height: 22px;
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    color: #222;
+    margin-bottom: 24px;
+    margin-top: 16px;
+    max-width: 100%;
+}
+
+.beliefs {
+	width: 100%;
+
+}
+
+.beliefs_row {
+	padding: 20px 0px 20px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.beliefs_row {
+		padding: 20px 0px 0px 0px;
+	    height: auto;
+	    display: flex;
+	    flex-direction: column;
+	    gap: 20px;
+	    width: auto;
+	}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+	.padding {
+		margin: 0px 0px 0px 0px;
+	    height: auto;
+	    display: flex;
+	    gap: 20px;
+	    width: auto;
+		flex-direction: column;
+		gap: 0px;
+	}
+}
+
+
+
+.ditto_row {
+	padding: 20px 0px 20px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+}
+
+.ditto_row {
+	padding: 20px 0px 20px 0px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.ditto_row {
+		padding: 0px 0px 0px 0px;
+	    height: auto;
+	    display: flex;
+	    flex-direction: column;
+	    gap: 20px;
+	    width: auto;
+		gap: 0px;
+	}
+}
+
+
+
+
+
+.ditto_group {
+	margin: 0px 0px 0px 0px;
+    padding: 40px 40px 40px 40px;
+    background-color: #0094B3;
+    border-bottom: #fff solid 2px;
+    color: #fff;
+}
+
+.ditto_group .beliefs_title {
+	font-size: 16px;
+	line-height: 32px;
+	background-color: #fff;
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	color: #0094B3;
+	padding: 8px 0px 8px 12px;
+	margin-bottom: 8px;
+	border: 1px #fff solid;
+	border-radius: 4px;
+	letter-spacing: -0.25px;
+}
+
+.beliefs_title {
+	font-size: 14px;
+	line-height: 20px;
+	background-color: #fff;
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	color: #fff;
+	padding: 8px 8px 8px 12px;
+	margin-bottom: 8px;
+	border: 1px #fff solid;
+	border-radius: 4px;
+	letter-spacing: -0.25px;
+}
+
+
+
+.ditto_group .beliefs_description {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 24px;
+    max-width: 90%;
+    margin-bottom: 20px;
+
+}
+
+.ditto_group p {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-size: 13px;
+	color: #fff;
+	line-height: 20px;
+	margin: 0px 0px 20px 0px;
+	text-transform: none;
+	text-decoration: none;
+	text-align: left;
+	max-width: 480px;
+}
+
+
+
+
+
+
+
+.guideline_group_header {
+	font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 40px 0px 40px 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.guideline_group_header img {
+	height: 80px;
+	display: block;
+	float: left;
+	
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+	.guideline_group_header {
+        font-size: 38px;
+        line-height: 48px;
+        margin: 20px 0px 20px 0px;
+	}
+
+
+	.guideline_group_header img {
+	    height: 64px;
+	    display: block;
+	    float: left;
+	}
+}
+
+
+
+
+
+.ditto_marks img {
+	width: 200px;
+    float: right;
+    padding-right: 40px;
+}
+
+
+
+.values_title {
+	padding-bottom: 8px;
+}
+
+.values_title img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(246deg) brightness(102%) contrast(102%);
+    height: 40px;
+    width: auto;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.guideline_group_header {
+	    margin: 40px 0px 20px 0px;;
+	}
+
+	.guideline_group_header img {
+		height: 56px;
+	}
+
+
+	.ditto_group {
+    	padding: 20px 20px 40px 20px;
+		border-bottom: #fff solid 2px;
+	}
+
+	.ditto_group p {
+        font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+        text-align: left;
+        font-size: 12px;
+        line-height: 20px;
+        padding-left: 0px;
+        max-width: 100%;
+	}
+
+	.values_title {
+		padding-bottom: 0px;
+		padding-top: 20px;
+	}
+
+	.ditto_marks img {
+		width: 200px;
+	    float: left;
+	    padding-right: 40px;
+	}
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.guideline_group_header {
+		font-size: 32px;
+        line-height: 40px;
+        margin: 20px 0px 20px 0px;
+	}
+
+	.guideline_group_header img {
+		height: 56px;
+	}
+
+	.values_title img {
+		height: 36px;
+	}
+
+	.ditto_group .beliefs_description {
+		font-family: 'Atlas Grotesk Web', sans-serif;
+	    color: #fff;
+	    font-size: 16px;
+	    line-height: 24px;
+	    letter-spacing: .5px;
+	    max-width: 90%;
+	    margin-bottom: 10px;
+
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+	.guideline_group_header img {
+		height: 48px;
+	}
+
+	.values_title img {
+		height: 32px;
+	}
+
+	.ditto_group .beliefs_description {
+		font-family: 'Atlas Grotesk Web', sans-serif;
+	    color: #fff;
+	    font-size: 16px;
+	    line-height: 24px;
+	    letter-spacing: .5px;
+	    max-width: 90%;
+	    margin-bottom: 10px;
+
+	}
+
+	.ditto_group {
+	    border-bottom: #FFFFFF solid 2px;
+	}
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+	.guideline_group_header {
+        margin: 20px 0px 20px 0px;
+	}
+
+	.guideline_group_header img {
+		height: 32px;
+	}
+
+	.values_title img {
+		height: 24px;
+	}	
+
+	.ditto_group .beliefs_description {
+	    font-size: 14px;
+	    line-height: 22px;
+	    letter-spacing: .5px;
+	    max-width: 100%;
+	    margin-top: 4px;
+	    margin-bottom: 8px;
+
+	}
+}
+
+
+
+.contents {
+	background-color: noneIntr;
+    padding: 40px 40px 40px 40px;
+    vertical-align: baseline;
+    text-overflow: ellipsis;
+    border-bottom: #E7AEC6 solid 2px;
+}
+
+
+
+.contents_heading {
+	list-style-type: none; 
+	padding-left: 0; /* Remove padding */
+	margin-left: 0; /* Remove margins */
+}
+
+
+
+.contents_heading2 {
+	list-style-type: none; 
+	padding-left: 0; /* Remove padding */
+	margin-left: 0; /* Remove margins */
+	display: flex;
+	padding-bottom: 10px;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+    margin-left: 0px;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+.contents_heading2 img {
+	height: 30px;
+	float: left;
+	filter: invert(89%) sepia(95%) saturate(534%) hue-rotate(282deg) brightness(99%) contrast(83%);
+}
+
+@media screen and (max-width: 400px) {
+
+	.contents_heading2 img {
+		height: 24px;
+	}
+}
+
+
+
+
+.contents ul {
+	font-family: 'Atlas Grotesk Web', sans-serif;
+    margin-left: 0px;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.contents ul {
+	    font-size: 13px;
+	    line-height: 28px;
+	    letter-spacing: 1.5px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.contents ul {
+	    letter-spacing: 2px;
+	    margin-block-end: 0px;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+
+	.contents ul {
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        margin-block-end: 0px;
+    }
+}
+
+
+.contents_page_ditto li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contents_page_ditto li {
+	/*list-style-type: none;*/ /* Remove bullets */
+	padding-left: 0; /* Remove padding */
+	margin-left: 0; /* Remove margins */
+}
+
+.contents_page_ditto li a {
+	color: #E7AEC6;
+}
+
+
+.contents_page li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contents_page li {
+	/*list-style-type: none;*/ /* Remove bullets */
+	padding-left: 0; /* Remove padding */
+	margin-left: 0; /* Remove margins */
+}
+
+.contents_page li a {
+	color: #222222;
+}
+
+
+.contents_svg {
+	list-style-type: none; /* Remove bullets */
+	padding-left: 0; /* Remove padding */
+	margin-left: 0; /* Remove margins */
+}
+
+
+html {
+  scroll-padding-top: 64px;
+}
+
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+
+
+
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+/*<!-- -- -- -- -- -- -- -- -- -- -- --  -->*/
+
+
+
+/*
+.logo_row {
+	margin: 0px auto 4px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 100%;
+	align-items: center;
+}
+
+
+.logo_row img {
+	height: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.logo_row {
+	    flex-direction: column;
+	}
+}
+
+
+
+.logos {
+	width: 100%;
+	float: left;
+	min-height: 180px;
+	display: flex;
+	background-color: #EFEFE7;
+	padding: 0px 20px 0px 20px;
+	flex: 33%;
+	align-items: center;
+	justify-content: center;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+	.logos {
+		min-height: 180px;
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.logos {
+		min-height: 80px;
+		font-size: 20px;
+	}
+}
+
+*/
+
+
+
+
+.logo_row {
+	margin: 0px auto 4px auto;
+    gap: 4px;
+    width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.logo1 {
+	display: flex;
+	padding: 0px 40px 0px 40px;
+	height: 400px;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo1 img {
+	max-height: 180px;
+
+}
+
+.logos {
+	display: flex;
+	float: left;
+	height: 200px;
+	background-color: #EFEFE7;
+	padding: 0px 20px 0px 20px;
+	flex: 33%;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.logos2 {
+	margin: 0px auto 0px auto;
+    gap: 4px;
+    width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.logo_row img {
+	max-height: 100px;
+}
+
+
+.logos3 {
+	margin: 0px auto 0px auto;
+    gap: 4px;
+    width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+	.logos {
+		display: flex;
+		float: left;
+		height: 140px;
+		background-color: #EFEFE7;
+		padding: 40px;
+		flex: 33%;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+	.logos {
+		display: flex;
+		float: left;
+		height: 120px;
+		background-color: #EFEFE7;
+		padding: 20px;
+		flex: 33%;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.logos3 {
+		margin: 0px auto 0px auto;
+	    gap: 4px;
+	    width: 100%;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.logos {
+        display: flex;
+        float: left;
+        height: 80px;
+        background-color: #EFEFE7;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+	}
+
+	.logo_row {
+		margin: 0px auto 2px auto;
+	    gap: 2px;
+		flex-direction: column;
+	}
+
+	.logos2 {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+	    gap: 2px;
+
+	}
+
+	.logo_row img {
+		height: 80%;
+	}
+
+}
+
+
+.quote {
+	border-left: 3px solid #222;
+	padding-left: 0px;
+	padding-top: 0px;
+	margin: 20px 0px 40px 0px;
+}
+
+.quote ul {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-size: 20px;
+	line-height: 40px;
+    color: #444;
+	letter-spacing: 0px;
+    display: block;
+}
+
+.quote h2 {
+	padding-bottom: 0px;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0px;
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+}
+@media screen and (max-width: 600px) {
+
+	.quote h2 {
+		padding-bottom: 0px;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0px;
+		font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	}
+}
+
+
+/* ––––––––––––––––––––––––––––––– */
+
+.ditto_believes_containter {
+
+    margin-bottom: 40px;
+	border-bottom: 1px solid #222;
+}
+
+
+
+.ditto_believes_group {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 100%;
+	align-items: top;
+	border-top: 1px solid #222;
+	border-left: 1px solid #222;
+}
+
+.ditto_believes {
+	color: #222222;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 0px;
+	border-right: 1px solid #222;
+	font-size: 22px;
+	padding: 40px;
+	line-height: 40px;
+	letter-spacing: 0px;
+    width: 100%;
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+}
+
+.ditto_believes_containter .ditto_believes_group:
+
+
+.ditto_believes_red {
+	color: #CB0044;
+
+}
+
+
+.ditto_believes_blue {
+	color: #0094B3;
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+	.ditto_believes {
+		font-size: 18px;
+		line-height: 34px;
+		padding: 34px;
+	}
+
+	.ditto_believes_containter {
+	    margin-bottom: 30px;
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+	.ditto_believes {
+		font-size: 16px;
+		line-height: 30px;
+		padding: 20px;
+
+	}
+
+	.ditto_believes_containter {
+		margin-bottom: 20px;
+	}
+
+
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+
+	.ditto_believes {
+
+		font-size: 14px;
+		line-height: 24px;
+		padding: 20px;
+	}
+
+}
+
+
+
+
+.color_logo {
+	display: flex;
+	padding: 0px 40px 0px 40px;
+	margin-top: 20px;
+	height: 400px;
+	align-items: center;
+	justify-content: center;
+}
+
+.color_logo img {
+	max-height: 180px;
+
+}
+
+
+.color_row {
+	margin: 4px auto 0px auto;
+    gap: 4px;
+    width: 100%;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.color_color {
+	display: flex;
+	float: left;
+	height: 100px;
+	padding: 0px 0px 0px 0px;
+	flex: 33%;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.storyboard { 
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-top: 4px;
+}
+
+.storyboard_2 { 
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+}
+
+.storyboard_4 { 
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+}
+
+.frame {
+	width: 100%;
+	display: flex;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.storyboard_2 { 
+		width: 100%;
+	}
+
+	.storyboard_4 { 
+		width: 100%;
+		flex-direction: column;
+	}
+
+}
+
+
+
+
+.to_do_list {
+/*	margin: 0px 20px 4px 20px;*/
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-top: 32px;
+}
+
+
+.to_do_list_1 {
+    flex: 100%;
+    width: 50%;
+	margin-left: 0; /* Remove margins */
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.to_do_list {
+/*		margin: 0px 10px 4px 10px;*/
+	}
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+	.to_do_list {
+/*		margin: 0px 0px 4px 0px;*/
+  		flex-direction: column;
+		gap: 16px;
+	}
+
+	.to_do_list_1 {
+	    width: 100%;
+
+	}
+
+}
+
+
+.to_do_header {
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: .5px;
+	padding-bottom: 8px;
+}
+
+@media screen and (max-width: 500px) {
+
+	.to_do_header {
+	    text-transform: uppercase;
+	    font-size: 20px;
+	    line-height: 32px;
+	    letter-spacing: .5px;
+	    padding-bottom: 8px;
+	}
+}
+
+
+
+.to_do_list_1 ul {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	padding-left: 0; /* Remove padding */
+	margin-left: 0; /* Remove margins */
+	font-family: 'Atlas Grotesk Web', sans-serif;
+}
+
+.to_do_list_2 li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	padding-left: 0; /* Remove padding */
+	margin-left: 0; /* Remove margins */
+	font-size: 16px;
+	line-height: 36px;
+}
+
+
+.captions {
+    width: 100%;
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    /* background-color: #fff; */
+    padding: 8px 8px 8px 0px;
+    margin: 16px 0px 8px 0px;
+}
+
+
+.captions2 {
+	width: 100%;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	background-color: #fff;
+	padding: 8px 8px 8px 12px;
+	margin-top: 10px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .captions {
+        width: 100%;
+        font-family: 'Atlas Grotesk Web', sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+        /*background-color: #fff;*/
+        padding: 8px 8px 8px 12px;
+        margin-bottom: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+.captions3 {
+	width: 100%;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	background-color: #ECECE1;
+	padding: 8px 8px 8px 12px;
+	margin: 0px 0px 0px 0px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.captions3 {
+		width: 100%;
+		font-family: 'Atlas Grotesk Web', sans-serif;
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+
+}
+
+/**/
+
+
+
+
+.shoots { 
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-top: 4px;
+}
+
+.shoots_2 { 
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+}
+
+.shoots_4 { 
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+}
+
+.still {
+	width: 100%;
+	display: flex;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.shoots_2 { 
+		width: 100%;
+		flex-direction: column;
+	}
+
+}
+
+.matter_container1 {
+	margin: 16px 0px 32px 0px;
+}
+
+.matter_container2 {
+	margin: 16px 0px 8px 0px;
+}
+
+.captions3 {
+	border-radius: 4px;
+	margin-top: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+	.quote {
+	    padding-left: 10px;
+	}
+}
+
+/*
+MOBILE MARGIN UPDATE                        
+*/
+
+@media screen and (max-width: 800px) {
+
+	.matter_container1 {
+		margin: 16px 20px 32px 20px;
+	}
+
+	.matter_container2 {
+		margin: 20px 20px;
+	}
+
+	.captions3 {
+		margin: 0px 20px;
+		border-radius: 0px;
+		width: auto;
+	}
+
+	.big_divider {
+	    margin-top: 40px;
+	    margin-bottom: 20px;
+	}
+
+	.contents {
+    	padding: 20px 20px 40px 20px;
+	}
+
+	.quote {
+	    padding-left: 0px;
+	}
+
+/*	.to_do_list {
+		margin: 0px 20px 4px 20px;
+	}*/
+
+
+}
+
+

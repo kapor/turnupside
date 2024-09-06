@@ -1,0 +1,42 @@
+
+
+
+<!-- ++++++ menu list ++++++ -->
+<table id="menu_grid">
+	<tr>
+		<th class="menu_header">Project</th>
+		<th class="menu_header">Type</th>
+		<th class="menu_header" id="menu_header_column_3">Size</th>
+	</tr>
+	{% assign posts = site.posts %}
+	{% for post in posts %}
+	<tr class="menu_row" style="transform: rotate(0);">
+		<td class="menu_data">
+		<a id="mygrid_data_column_1" href="{{site.baseurl}}{{post.url}}" class="stretched-link";>{{post.category}}
+		</a>
+		</td>
+		<td class="menu_data" id="mygrid_data_column_2">{{post.type}}</td>
+		<td class="menu_data" id="mygrid_data_column_3">{{post.size}}</td>
+		</a>
+	</tr>
+	{% endfor %}
+</table>
+
+
+
+<!-- ++++++ tag cloud ++++++ -->
+<div class="tag_cloud">
+
+		{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+		{% assign sortedTags = site_tags | split:',' | sort %}
+
+	<div class="menu_header_archive">Inventory</div>
+
+	<ul class="archives">
+		<li><a href="{{site.baseurl}}/tags/">All posts</a></li>
+		{% for tag in sortedTags %}
+		<li><a href="{{site.baseurl}}/tags/#{{ tag | cgi_escape }}">{{ tag }}: {{ site.tags[tag].size }}</a></li>
+		{% endfor %}
+	</ul>
+
+</div>

@@ -1,0 +1,48 @@
+---
+layout: archives
+title: Inventory
+---
+
+
+<main role="main" class="posts_archives">
+	<article class="archive">
+		<article role="article">
+
+		<div class="archive_title">{{page.title}}</div>
+			<header>
+<!-- ++++++ tag cloud ++++++ -->
+
+				<ul class="tag_cloud">
+					{% capture site_tags %}{% for tag in site.tags %}{{tag | first}}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+					{% assign sortedTags = site_tags | split:',' | sort %}
+
+					{% for tag in sortedTags %}
+						<li><a href="#{{tag | cgi_escape}}">{{tag}}: {{site.tags[tag].size}}</a></li>
+					{% endfor %}
+				</ul>
+			</header>
+				{% for tag in sortedTags %}
+				<div class="tag_titles" id="{{tag | cgi_escape}}">{{tag}}</div>
+				<ul class="taglist">
+					{% for post in site.tags[tag] %}
+					<li class="tag_anchor">
+
+					<!-- 	 <time itemprop="dateCreated" datetime="{{post.date}}">
+						 {{ post.date | date: "%Y" }}
+						 </time> <span class="archives_pipe">| &nbsp;</span> -->
+					{% comment %}
+					{% endcomment %}
+
+
+						<a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="{{site.baseurl}}{{post.url}}">{{post.entity}} / {{post.category}}</a>
+					</li>
+					{% endfor %}
+					
+				</ul>
+				{% endfor %}
+		</article>
+	</article>
+
+</main>
+
+

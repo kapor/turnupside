@@ -1,0 +1,3666 @@
+ /* ak_site
+  v 2.0 - 10-2023
+*/
+
+/* add syntax highlight styles */
+@import url("syntax-highlighting.css");
+
+
+/* reset margins */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, header, hgroup, menu, nav, output, section, summary, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+    text-overflow: ellipsis;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.highlight {
+	    padding-top: 10px;
+	}
+}
+
+
+html, body{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+body {
+	background-color: #F7F7F2;
+	overflow-y: hidden; 
+}
+
+
+
+.image_desk {
+	display: block;
+}
+
+.image_mob {
+	display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.image_desk {
+		display: none;
+	}
+
+	.image_mob {
+		display: block;
+	}
+
+}
+
+
+.regular_container {
+	padding: 20px 0px 0px 0px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.regular_container {
+		padding: 20px 20px 0px 20px;
+	}
+
+}
+
+
+
+/* –––––––––––––––––– FOOTER –––––––––––––––––– */
+
+
+
+
+footer {
+	margin: 0;
+	padding: 20px 0px 0px 0px;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 800px) {
+	footer {
+		padding: 8px 0px;
+	}
+}
+
+footer p {
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-style: normal;
+	line-height: 32px;
+	font-size: 13px;
+    color: #444;
+    margin: 0 0 1em 0;
+    letter-spacing: -0.5px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer p a {
+	font-family: 'Atlas Grotesk Web', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    background: #fff;
+    color: #444;
+    /* margin-right: 2px; */
+    /* margin-top: 12px; */
+    padding: 4px 8px 4px 8px;
+    border-radius: 0px;
+    line-height: 30px;
+}
+
+.continue_bottom {
+	padding: 20px 0px;
+}
+
+.continue_bottom h2 {
+	padding: 0px;
+	margin: 0px;
+}
+
+@media screen and (max-width: 600px) {
+
+	.continue_bottom  {
+		padding: 20px 20px;
+	}
+}
+
+.credit_container {
+	margin-bottom: 20px;
+	margin-top: 60px;
+	width: 100%;
+	float: right;
+/*    display: flex;*/
+    flex-direction: row;
+    gap: 2px;
+
+}
+
+.credit {
+	width: 25%;
+	float: left;
+	padding: 8px;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-size: 12px;
+	line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: white;
+}
+
+.credit_left, .credit_right {
+	width: 50%;
+}
+
+@media screen and (max-width: 500px) {
+
+	.credit  {
+		width: 50%;
+
+	}
+
+	.credit_container {
+		width: 100%;
+	}
+
+	.credit_left, .credit_right {
+	width: 50%;
+}
+
+}
+
+
+footer .credit_top {
+	width: 100%;
+	float: left;
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-style: normal;
+    font-weight: 300;
+    letter-spacing: .75px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 10px;
+	border-bottom: 1px dotted #CCCCCC;
+	padding-bottom: 8px;
+}
+
+footer .credit_bottom {
+	width: 100%;
+	float: left;
+	padding-top: 16px;
+	height: 56px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: white;
+}
+
+
+
+/* Clearfix (clear floats) */
+.credit_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer table {
+	width: 100%;
+	float: left;
+	border: 2px #F7F7F2 solid;
+	padding: 8px;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-size: 12px;
+	line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: white;
+}
+
+
+
+/* –––––––––––––––––– END FOOTER –––––––––––––––––– */
+
+
+
+
+
+
+
+hr {
+	border-top: 1px solid #888;
+}
+
+@media screen and (max-width: 800px) {
+	hr {
+	    border-top: 1px solid #888;
+	    margin: 8px 0px;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+/* main content */
+.lotsofstuff { 
+    display: block;
+    padding-top: 0px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	text-align: left;
+	overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+#big_1::-webkit-scrollbar { 
+    display: none; 
+} 
+
+.lotsofstuff_post {
+	width: 100%;
+    height: fit-content;
+	margin: 0;
+	text-align: left;
+}
+
+#big_1 {
+	width: 33.33%;
+    top: 0;
+    margin: 64px 0px 100px 0px;
+    padding: 28px 0px 200px 0px;
+    float: left;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    overflow: scroll;
+}
+
+#big_2 {
+    width: 66.66%;
+   	top: 0;
+    margin: 64px 0px 0px 0px;
+	padding: 24px 0px 0px 0px;
+    float: right;
+	height: 100%;
+	overflow-y: auto;
+    background-color: transparent;
+	background-size: cover;
+}
+
+
+/*#big_2 section {
+	padding: 0px 0px 40px 0px;
+	border-bottom: 1px dotted #ccc;
+	max-width: 1200px;
+	overflow: hidden;
+	margin: 0px 0px 40px 0px;
+	background: transparent;
+}*/
+
+
+.archive {
+	margin-bottom: 500px;
+}
+
+#top_button {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	letter-spacing: 2px;
+	font-weight: 300;
+	font-size: 10px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	/*  transform: translate(-50%, 0%);*/
+	z-index: 19;
+	border: none;
+	background-color: #222222;
+	color: white;
+	cursor: pointer;
+	padding: 12px;
+	border-radius: 2px;
+	display: block;
+}
+
+#top_button:hover {
+	background-color: #F63F55;
+}
+
+.top_button {
+  opacity: 0;
+}
+
+.scrolled {
+  opacity: 1;
+  transition: 150ms all;
+}
+
+
+/* ++++++++++ POST-GRIDS ++++++++++ */
+
+.kudos_desk {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+}
+
+.kudos_mob {
+	display: none;
+}
+
+.kudos_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.kudos_desk {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.kudos_desk {
+		display: none;
+		width: 100%;
+	}
+
+	.kudos_mob {
+		display: block;
+		width: 100%;
+	}
+}
+
+
+/* ++++++++++ MENU SCROLL INDICATOR ++++++++++ */
+
+.menu_row {
+    border-left: 2px solid #FFFFFF;
+}
+
+.menu_highlight {
+    background-color: #F7F7F2;
+    border-left: 2px solid #6219FF;
+}
+
+.menu_row:hover {
+	background: #F7F7F2;
+	color: #6219FF;
+}
+
+.menu_row_active {
+	background: #F7F7F2;
+}
+
+
+#mygrid_data_column_1:hover {
+	background: #F7F7F2;
+	color: #6219FF;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	#menu_grid #mygrid_data_column_3 {
+		display: none;
+		text-align: right;
+	}
+
+	#menu_grid #menu_header_column_3 {
+		display: none;
+		text-align: right;
+	}
+}
+
+#menu_grid  {
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+
+#menu_grid .menu_header {
+    text-align: left;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+	color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 0;
+    padding: 0px 6px 20px 20px;
+}
+
+#menu_grid td {
+	font-family: 'Atlas Grotesk Web', 'trade-gothic-next', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: left;
+	padding-right: 14px;
+	/* padding left needs to be 2px less to account for the 2px border left */
+	padding-left: 18px;
+	padding-top:;
+	border-bottom: 1px solid #F7F7F2;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	#menu_grid {
+	    width: 100%;
+	    margin: 0px 0px 80px 0px;
+	}
+
+	#menu_grid td {
+		padding-right: 20px;
+		/* padding left needs to be 2px less to account for the 2px border left */
+		padding-left: 20px;
+	}
+
+}
+
+
+
+#menu_grid a  {
+	text-decoration: none;
+	color: #222;
+}
+
+.feed ul {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color: #444;
+	margin: 0px;
+    padding-inline-start: 0px;
+	letter-spacing: -0.5px;
+	display: block;
+}
+
+
+
+
+
+.feed section {
+	margin: 0px 20px 48px 20px;
+	padding: 0px 0px 24px 0px;
+	border-bottom: 1px dotted #ccc;
+	max-width: 1200px;
+}
+
+article img {
+    width: 100%;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+
+	article img {
+	    border-radius: 0px;
+	}
+
+}
+
+.feed {
+	margin-top: 100px;
+	margin-bottom: 80px;
+    background-color: transparent;
+}
+
+
+
+
+p {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 13px;
+	line-height: 18px;
+	color: #444;
+	margin: 0 0 1em 0;
+	letter-spacing: -0.5px;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.column a {
+	cursor: pointer; 
+}
+
+#navbar {
+	overflow: hidden;
+	background-color: #fff;
+	border-bottom: 1px solid #F7F7F2;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+/*	max-width: 1800px; */
+}
+
+.sticky + .content {
+	padding-top: 60px;
+}
+
+#col_1, #col_2, #col_3 {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	text-transform: uppercase;
+    width: 33.33%;
+	letter-spacing: 1.3px;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    line-height: 24px;
+    opacity: 100%;
+    margin: 0;
+    padding: 20px 0px 20px 20px;
+    box-sizing: border-box;
+    vertical-align: middle;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#col_4 {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	text-transform: uppercase;
+    width: 33.33%;
+	letter-spacing: 1.3px;
+    display: none;
+    float: left;
+    opacity: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+#col_3, #col_4 {
+	cursor:	pointer;
+}
+
+#col_4 {
+	
+}
+
+#col_4 img{
+	width: 32px;
+	height: 32px;
+}
+
+
+
+/* ++++++++++ INFO MODAL ++++++++++ */
+
+#info_button {
+	cursor: pointer;
+}
+
+.no-scroll {
+   overflow: visible;
+}
+
+.overlay_back {
+	display: none;
+	position: fixed;
+	opacity: 0;
+	z-index: 3;
+	left: 0;
+	top: 64px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: rgba(245,245,245,0);
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+
+.info_overlay_left {
+	border-radius: 0px;
+	width: 33.33%;
+	height: 0;
+	background-color: white;
+	z-index: 6;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(0, 0);
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: rgba(245,245,245,0.75);
+	cursor: auto;
+	transition: all 0.25s ease;
+}
+
+
+.info_overlay {
+	border-radius: 0px;
+	width: 66.66%;
+	height: 0;
+	background-color: white;
+	z-index: 6;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translate(0, 0);
+	overflow-x: hidden;
+	overflow-y: auto;
+	cursor: auto;
+	transition: all 0.5s ease;
+}
+
+.info_close {
+	position: fixed;
+	right: 0;
+	padding: 16px 16px 16px 0px;
+	cursor: pointer;
+}
+
+.info_close:hover {
+	color: #222;
+}
+
+#info_page {
+	padding: 0px 20px 20px 20px;
+	overflow-y: auto;
+	gap: 40px;
+	border-top: 1px dotted #DDD;
+	display: inline-block;
+}
+
+#info_page p {
+	font-family: 'Atlas Grotesk Web', 'neuzeit-grotesk', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: .2px;
+}
+
+#info_page div {
+	font-family: 'Atlas Grotesk Web', 'neuzeit-grotesk', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: .2px;
+}
+
+#info_page .info_col_1 {
+	float: left;
+	width: 48%;
+}
+
+#info_page .info_col_2 {
+	float: right;
+	width: 40%;
+	margin-right: 40px;
+}
+
+
+.info_header {
+	padding-top: 8px;
+}
+
+
+
+
+/* ++++++++++++++++ FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++ FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++ FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++ FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++ FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.large_words {
+	font-family: 'Atlas Grotesk Web', 'trade-gothic-next', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 44px;
+	line-height: 56px;
+	letter-spacing: -0.5px;
+	color: #222222;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.large_words {
+		font-size: 40px;
+		line-height: 52px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.large_words {
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.large_words {
+		font-size: 32px;
+		line-height: 44px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.large_words {
+		font-size: 28px;
+		line-height: 35px;
+	}
+
+}
+
+/* ––––––––– */
+
+
+.appendix h2 {
+	font-size: 28px;
+	line-height: 44px;
+}
+
+.appendix ul {
+	font-size: 28px;
+	line-height: 44px;
+	margin-bottom: 0px;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.appendix h2 {
+		font-size: 24px;
+		line-height: 38px;
+	}
+
+}
+
+
+
+/* ––––––––– */
+
+
+
+
+/* ––––––––– */
+
+.bg_noVertPadding {
+	padding: 0px 40px 40px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.bg_noVertPadding {
+		padding: 0px 40px 40px 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.bg_noVertPadding {
+		padding: 0px 0px 40px 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.bg_noVertPadding {
+		padding: 0px 0px 20px 0px;
+	}
+}
+
+/* ––––––––– */
+
+.bg_color_none {
+	padding: 40px 40px 40px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.bg_color_none {
+		padding: 20px 40px 40px 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.bg_color_none {
+		padding: 20px 0px 40px 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.bg_color_none {
+		padding: 20px 0px 30px 0px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	.bg_color_none {
+		padding: 20px 0px 20px 0px;
+	}
+}
+
+/* ––––––––– */
+
+.bg_color_none_less_pad {
+	padding: 40px 40px 10px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.bg_color_none_less_pad {
+		padding: 20px 40px 0px 10px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.bg_color_none_less_pad {
+		padding: 20px 0px 10px 0px;
+	}
+}
+
+
+
+/* ––––––––– */
+
+.bg_color_hp1 {
+	background-color: #EDE891;
+	padding: 40px 40px 80px 40px;
+	margin: 40px 0px 60px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.bg_color_hp1 {
+		padding: 40px 40px 80px 40px;
+		margin: 40px 0px 60px 0px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+
+	.bg_color_hp1 {
+		padding: 40px 40px 80px 40px;
+		margin: 40px 0px 60px 0px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	.bg_color_hp1 {
+		padding: 20px 20px 40px 20px;
+		margin: 40px 0px 60px 0px;
+	}
+}
+
+/* ––––––––– */
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+h1, h1 a {
+	font-family: 'Atlas Grotesk Web', 'trade-gothic-next', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+	text-align: left;
+	font-size: 44px;
+	line-height: 56px;
+	letter-spacing: -0.5px;
+	color: #222222;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+	h1, h1 a {
+		font-size: 40px;
+		line-height: 52px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	h1, h1 a {
+		font-size: 36px;
+		line-height: 48px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	h1, h1 a {
+		font-size: 32px;
+		line-height: 44px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	h1, h1 a {
+		font-size: 26px;
+		line-height: 38px;
+	}
+
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+h2 {
+    font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: 0.2px;
+	color: #222;
+	text-decoration: none;
+	padding-bottom: 30px;
+	margin-left: 20px;
+	max-width: 94%;
+}
+
+@media screen and (max-width: 1200px) {
+
+	h2 {
+		margin-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	h2 {
+		font-size: 28px;
+		line-height: 40px;
+		margin-left: 10px;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	h2 {
+        font-size: 26px;
+        line-height: 36px;
+        max-width: 100%;
+		margin-left: 0px;	
+	}
+
+}
+
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 22px;
+        line-height: 32px;
+        padding-bottom: 20px;
+    }
+
+}
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+.smaller_description {
+    font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: 0.2px;
+	color: #222;
+	text-decoration: none;
+	padding-bottom: 16px;
+	margin-left: 20px;
+	max-width: 94%;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.smaller_description {
+		margin-left: 10px;
+		font-size: 20px;
+		line-height: 28px;
+		max-width: 100%;
+		padding-bottom: 10px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.smaller_description {
+		font-size: 20px;
+		line-height: 28px;
+		margin-left: 10px;
+		max-width: 100%;
+		padding-bottom: 10px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.smaller_description {
+		font-size: 20px;
+		line-height: 28px;
+		max-width: 100%;
+
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.smaller_description {
+	    font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+	    font-weight: 300;
+	    font-style: normal;
+		text-align: left;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+		color: #222;
+		text-decoration: none;
+		padding-bottom: 10px;
+		max-width: 100%;
+	}
+
+}
+
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+
+.col_title {
+	font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 26px;
+	line-height: 38px;
+	letter-spacing: 0.2px;
+	color: #222;
+	text-decoration: none;
+	padding-top: 40px;
+	padding-bottom: 0px;
+}
+
+@media screen and (max-width: 1400px) {
+
+	.col_title {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.col_title {
+		font-size: 20px;
+		line-height: 32px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.col_title {
+		font-size: 24px;
+		line-height: 36px;
+		padding-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.col_title {
+		padding-top: 20px;
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+}
+
+
+
+.col_des {
+    font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+    font-weight: 300;
+	text-align: left;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: 0.2px;
+	color: #222;
+    max-width: 94%;
+}
+
+@media screen and (max-width: 1400px) {
+
+	.col_des {
+		font-size: 20px;
+		line-height: 32px;
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.col_des {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.col_des {
+		font-size: 20px;
+		line-height: 34px;
+        padding-bottom: 20px;
+		width: 100%;
+	}
+
+}
+
+.col_des2 {
+    font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+    font-weight: 300;
+	text-align: left;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: 0px;
+	color: #E40E62;
+    max-width: 94%;
+}
+
+@media screen and (max-width: 1400px) {
+
+	.col_des2 {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.col_des2 {
+		font-size: 20px;
+		line-height: 34px;
+	}
+
+}
+
+.col_break {
+	padding-top: 20px;
+	paddig-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.col_break {
+		padding-top: 10px;
+		paddig-bottom: 10px;
+	}
+
+}
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+.list ul li {
+    font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: 0.2px;
+	color: #222;
+	text-decoration: none;
+	padding-bottom: 16px;
+	margin-left: 20px;
+	max-width: 94%;
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.list ul li {
+		margin-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.list ul li {
+		font-size: 24px;
+		line-height: 36px;
+		margin-left: 10px;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.list ul li {
+		font-size: 22px;
+		line-height: 34px;
+		margin-left: 0px;
+		max-width: 100%;
+
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.list ul {
+		padding-top: 16px;
+	}
+
+
+	.list ul li {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+}
+
+
+.list ol li {
+    font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: 0.2px;
+	color: #222;
+	text-decoration: none;
+	padding-bottom: 16px;
+	margin-left: 20px;
+	max-width: 94%;
+
+}
+
+@media screen and (max-width: 1200px) {
+
+	.list ol li {
+		margin-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.list ol li {
+		font-size: 24px;
+		line-height: 36px;
+		margin-left: 10px;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.list ol li {
+		font-size: 22px;
+		line-height: 34px;
+		margin-left: 0px;
+		max-width: 100%;
+
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.list ol {
+		padding-top: 16px;
+	}
+
+	.list ol li {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+}
+
+
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+
+
+h3, h3 a {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	text-align: left;
+	font-size: 34px;
+	line-height: 38px;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	color: #222;
+	text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1400px) {
+
+	h3, h3 a {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	h3, h3 a {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	h3, h3 a {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	h3, h3 a {
+		font-size: 22px;
+		line-height: 26px;
+	}
+
+}
+
+
+.archive_title {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	text-align: left;
+	font-size: 34px;
+	line-height: 38px;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	color: #222;
+	text-decoration: none;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 800px) {
+
+	.archive_title {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+h4 {
+    font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: 0.2px;
+	color: #222;
+	text-decoration: none;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	margin-left: 20px;
+	max-width: 94%;
+}
+
+@media screen and (max-width: 1200px) {
+
+	h4, h4 a {
+		margin-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	h4, h4 a {
+		margin-left: 10px;
+		max-width: 100%;
+		padding-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	h4, h4 a {
+		font-size: 26px;
+		line-height: 36px;
+		margin-left: 0px;
+		max-width: 100%;
+		padding-top: 16px;
+
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	h4, h4 a {
+		font-size: 22px;
+		line-height: 34px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+
+h5, h5 a {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1.3px;
+	text-transform: uppercase;
+    width: fit-content;
+    color: #222222;
+    text-decoration: none;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+
+h6, h6 a {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1.3px;
+	text-transform: uppercase;
+    width: fit-content;
+    color: #222222;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+	h6, h6 a {
+	    font-size: 20px;
+		line-height: 32px;
+	    letter-spacing: 1.3px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	h6, h6 a {
+	    font-size: 16px;
+	    line-height: 28px;
+	    letter-spacing: 1px;
+	}
+
+}
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* ++++++++++++++++ END FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++ END FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++ END FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++ END FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++ END FONT SIZES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+.row_3 {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.row_3 {
+		padding-left: 10px;
+		padding-right: 10px;
+	    padding-bottom: 40px;
+		padding-top: 40px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.row_3 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.row_3 {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.row_3 {
+		padding-top: 0px;
+	}
+
+}
+
+.col_small {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+
+	.col_small {
+		width: 100%;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+	.col_small {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+
+}
+
+
+
+
+.col_small img {
+	height: 240px;
+	float: left;
+	flex-direction: column;
+	width: 80%;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.col_small img {
+		height: auto;
+		float: left;
+		flex-direction: column;
+		width: 40%;
+		vertical-align: middle;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.col_small img {
+		height: auto;
+		float: left;
+		flex-direction: column;
+		width: 40%;
+	}
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .col_small img {
+        height: 240px;
+        float: left;
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+}
+
+
+
+
+
+
+
+.tag_titles {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1.3px;
+	text-transform: uppercase;
+    width: fit-content;
+    color: #222222;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ++++++++++++++++ RIGHT COLUMN ++++++++++++++++ */
+
+#big_2 {
+	max-width: 100%;
+    overflow: auto;
+}
+
+/* article styling */
+
+.posts p {
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 200;
+    font-style: normal;
+	font-size: 16px;
+	line-height: 28px;
+	color: #444;
+/*	margin: 0 0 1em 0;*/
+	letter-spacing: -0.5px;
+	display: block;
+    margin-block-start: 0px;
+/*	margin-block-end: 20px;*/
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.posts ul {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 28px;
+	color: #444;
+    padding-inline-start: 0px;
+	letter-spacing: -0.5px;
+	display: block;
+    margin-left: 20px;
+}
+
+em {
+    text-align: left;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 0;
+}
+
+
+
+/* ++++++++++++++++ LEFT COLUMN ++++++++++++++++ */
+
+
+
+.menu_header {
+	padding-left: 20px;
+}
+
+.menu_header_archive {
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 16px;
+	line-height: 32px;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+    color: #999;
+	text-decoration: none;
+}
+
+.posts {
+	margin-bottom: 80px;
+    background-color: #F7F7F2;
+}
+
+.posts_archives {
+	margin: 0px 20px 200px 20px;
+    background-color: #F7F7F2;
+	overflow-y: auto;
+}
+
+.post-links {
+	margin: 0px 20px 0px 20px;
+}
+
+.posts article {
+	margin: 0px 20px 48px 20px;
+	padding: 0px 0px 24px 0px;
+	border-bottom: 1px dotted #ccc;
+	max-width: 1200px;
+}
+
+/*@media screen and (max-width: 500px) {
+	.posts article {
+		margin: 0px;
+		padding: 0px 16px 24px 16px;
+		border-bottom: 1px dotted #ccc;
+		max-width: 1200px;
+	}
+}
+*/
+
+
+section img {
+	width: 100%;
+	background-size: cover;
+}
+
+code {
+	width: 100%;
+	white-space: wrap; 
+}
+
+.tag_cloud {
+	margin: 40px 20px 0px 20px;
+	max-width: 800px; 
+	height: 50%;
+/*	padding-bottom: 100px;*/
+}
+
+table {
+    border-spacing: 0px;
+}
+
+header {
+/*	padding-bottom: 10px; */
+}
+
+
+.tag_cloud li {
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-style: normal;
+    font-weight: 300;
+    letter-spacing: .75px;
+	display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    background: #EFEDDE;
+    color: #444;
+    margin-right: 6px;
+    margin-top: 10px;
+    padding: 4px 8px 4px 8px;
+    border-radius: 2px;
+}
+
+.tag_cloud ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+/* ++++++++++++++++ ARCHIVE ++++++++++++++++ */
+
+.taglist {
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.taglist time {
+	text-align: left;
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	line-height: 40px;
+	color: #222;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 0;
+}
+
+@media screen and (max-width: 400px) {
+
+	.taglist time {
+		display: none;
+	}
+
+	.archives_pipe {
+		display: none;
+	}
+
+}
+
+
+.taglist a  {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	line-height: 40px;
+	color: #6219FF;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 0;
+}
+
+.archive ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.archive .tag_titles:target {
+	font-weight: 600;
+	scroll-margin-top: 20px;
+}
+
+.archive li {
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 800px) {
+	.archive li {
+		margin-bottom: 0px;
+		height: 32px;
+	}
+}
+
+.archive .tag_cloud li {
+	background-color: #fff;
+}
+
+.archive article h5 {
+	margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.archive article h3 {
+	padding-bottom: 24px;
+}
+
+
+/* +++++++ RETURN ARCHIVE +++++++ */
+
+
+.return {
+	display: none;
+}
+
+h5:target + .taglist .return {
+	display: block;
+}
+
+.return a {
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #6219FF;
+}
+
+/* +++++++ RETURN EVERYWHERE ELSE +++++++ */
+
+h5:target + .taglist .return2 {
+	display: block;
+}
+
+.return2 {
+	text-align: left;
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	cursor: pointer; 
+	letter-spacing: 1.3px;
+	color: #222;
+	text-decoration: none;
+	padding: 40px 20px 0px 20px;
+	margin: auto;
+
+}
+
+.section_spacer {
+	height: 200px;
+	width: auto;
+	background: transparent;
+}
+
+
+
+
+section:last-of-type {
+	/*height: 40vh;*/
+	margin-bottom: 42vh;
+}
+
+
+
+@media screen and (max-height: 1100px) {
+
+	section:last-of-type {
+		/*height: 40vh;*/
+		margin-bottom: 10vh;
+	}
+
+	.section_spacer {
+		height: 8px;
+		width: auto;
+		background: transparent;
+	}
+
+}
+
+
+/*
+.return a:before {
+	content: '\25b2\00a0';
+}
+*/
+
+
+
+
+.archive .tag_cloud li {
+	background-color: #fff;
+}
+
+p.excerpt {
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	font-size: 14px;
+	line-height: 26px;
+	color: #444;
+	padding: 0px 20px;
+	margin: 0 0 1em 0;
+	letter-spacing: -0.5px;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+
+
+.back_button {
+	padding-bottom: 10px;
+	text-align: left;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	cursor: pointer; 
+	letter-spacing: 1.3px;
+	color: #222;
+	text-decoration: none;
+}
+
+/* ++++++++++++++++ SYNTAX HIGHLIGHTING ++++++++++++++++ */
+
+p code {
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	line-height: 16px;
+	margin: 0 0 1em 0;
+	letter-spacing: -0.5px;
+	font-weight: 400;
+	color: #444444;
+	padding: auto 3px auto 3px;
+	background-color: #fff;
+}
+
+pre {
+	font-family: 'Atlas typewriter Web', 'trade-gothic-next', sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	color: #444444;
+	padding: 12px 20px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-left: 2px solid #444444;
+	background: #fff;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+
+	pre {
+		font-size: 12px;
+		line-height: 20px;
+		color: #444444;
+		padding: 10px 20px;
+		font-weight: 400;
+		margin-bottom: 10px;
+		margin-top: 0px;
+
+	}
+
+}
+
+
+@media screen and (max-width: 600px) {
+	pre {
+        font-size: 10px;
+        line-height: 17px;
+        color: #444444;
+        padding: 10px 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        margin-top: 0px;
+	}
+
+}
+
+
+
+#navbar_mobile {
+	display: none;
+	height: 0;
+	opacity: 0;
+}
+
+.menu_grid_mobile {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+	.menu_grid_mobile {
+		display: none;
+		opacity: 0;
+		height: 0;
+		max-height: 100vh;
+		padding: 0px 0px 0px 0px;
+		z-index: 20;
+		position: relative;
+		background-color: #ffffff;
+		overflow-y: scroll;
+	}
+
+
+	.menu_grid_mobile .menu_highlight {
+	    background-color: #F7F7F2;
+	    border-left: 2px solid #F7F7F2;
+	    color: #222222;
+	}
+
+	.menu_grid_mobile .menu_row:hover {
+		background: #FFFFFF;
+		color: #222222;
+	}
+
+	.menu_grid_mobile .menu_row_active {
+		background: #FFFFFF;
+		color: #222222;
+	}
+
+	.menu_grid_mobile #menu_header {
+		display: none;
+	}
+
+
+	.menu_grid_mobile .menu_grid_mobile::-webkit-scrollbar { 
+	    display: none; 
+	} 
+
+
+	.menu_grid_mobile {
+	    overflow: scroll;
+	}
+
+
+	#menu_grid .menu_data2 {
+		text-align: right;
+	} 
+
+}
+
+
+#col_2_mobile {
+	display: none;
+
+}
+
+.mob_white_back {
+	display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+	.mob_white_back {
+        display: block;
+        background-color: #FFFFFF;
+        height: 0vh;
+        width: 100%;
+        position: fixed;
+        z-index: 18;
+	}
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+	#big_1 {
+		display: none;
+		width: 100%;
+		float: left;
+		margin: 0px;
+		height: 100%;
+		padding: 0px;
+		position: absolute;
+		background-color: #fff;
+	}
+
+	#big_2 {
+	   	top: 0;
+	    margin: 64px 0px 0px 0px;
+		padding: 24px 0px 0px 0px;
+		width: 100%;
+	}
+
+
+	#navbar_mobile {
+		display: block;
+		overflow: hidden;
+		opacity: 1;
+		height: 64px;
+		z-index: 8;
+		background-color: #fff;
+		border-bottom: 1px solid #F7F7F2;
+		padding: 20px 20px 20px 20px;
+	}
+
+	#col_1_mobile {
+	    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	    font-weight: 300;
+	    font-style: normal;
+		text-transform: uppercase;
+	    width: 50%;
+		letter-spacing: 1.3px;
+	    display: inline-block;
+	    float: left;
+	    text-align: left;
+	    line-height: 24px;
+	    opacity: 100%;
+	    margin: 0;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	#col_2_mobile {
+	    /*font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	    font-weight: 300;
+	    font-style: normal;
+		text-transform: uppercase;*/
+	    width: 50%;
+		letter-spacing: 1.3px;
+	    display: inline-block;
+	    float: left;
+	    text-align: right;
+	    line-height: 24px;
+	    opacity: 100%;
+	    margin: 0;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	#col_3_mobile {
+	    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	    font-weight: 300;
+	    font-style: normal;
+		text-transform: uppercase;
+	    width: 50%;
+		letter-spacing: 1.3px;
+	    display: inline-block;
+	    float: left;
+	    text-align: right;
+	    line-height: 24px;
+	    opacity: 100%;
+	    margin: 0;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+
+
+
+	#navbar {
+		display: none;
+	}
+
+
+	.sticky {
+		z-index: 20;
+	}
+
+	#closebutton {
+		height: 64px;
+		text-align: right;
+	}
+
+	#closebutton img {
+	    padding: 20px 20px 20px 0px;
+	}
+
+
+
+	#mygrid_data_column_1:hover {
+		background: #FFFFFF;
+		color: #222222;
+	}
+
+
+
+}
+
+.left_white {
+	display: none;
+}
+
+.nav_back {
+	display: none;
+}
+
+.modal_back_left {
+	display: none;
+}
+
+.modal_back_right {
+	display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    #big_2 {
+        padding: 16px 0px 0px 0px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+
+	.lotsofstuff {
+	    display: block;
+	    padding-top: 0px;
+	    width: 100%;
+	    height: 100%;
+	    left: 50%;
+	    margin: 0;
+	    margin-left: -900px;
+	    max-width: 1800px;
+	    position: relative;
+	    text-align: left;
+	    overflow-y: auto;
+	    overflow-x: hidden;
+	}
+
+	#big_1 {
+	    width: 33.33%;
+	    top: 0;
+	    max-width: 600px;
+	    margin: 64px 0px 0px 0px;
+	    padding: 28px 0px 0px 0px;
+	    float: left;
+	    height: 100%;
+	    position: fixed;
+	    background-color: #fff;
+	    overflow: scroll;
+	    border-left: 1px solid #F7F7F2;
+	}
+
+	#big_2 {
+	    width: 66.66%;
+	    top: 0;
+	    margin: 64px 0px 0px 0px;
+	    padding: 24px 0px 0px 0px;
+	    float: right;
+	    height: 100%;
+	    max-width: 1200px;
+	    overflow-y: auto;
+	    background-color: transparent;
+	    background-size: cover;
+	}
+
+	#navbar {
+	    overflow: hidden;
+	    max-width: 1800px;
+	    margin-left: -900px;
+	    left: 50%;
+	    background-color: #fff;
+	    border-bottom: 1px solid #F7F7F2;
+	}
+
+	.left_white {
+	    left: 0;
+	    width: 33.33%;
+	    position: fixed;
+	    display: block;
+	    height: 100%;
+	    top: 0;
+	    z-index: -1;
+	    background-color: white;
+	}
+
+	.nav_back {
+		height: 65px;
+		width: 100%;
+		position: fixed;
+	    background-color: #fff;
+	    border-bottom: 1px solid #F7F7F2;
+	    display: block;
+	    z-index: 1;
+	}
+
+	.info_overlay {
+		max-width: 1200px;
+	}
+
+	.overlay_back {
+	    width: 100%;
+	    height: 100%;
+	    left: 50%;
+	    margin-left: -900px;
+	    max-width: 1800px;
+	}
+
+	.info_overlay_left {
+		max-width: 600px;
+		z-index: -2;
+	}
+
+	.column {
+		width: 600px;
+	}
+
+	#col_4 {
+	    text-align: right;
+	}
+
+	.info_close {
+	    position: absolute;
+	    right: 0;
+	    padding: 16px 16px 16px 0px;
+	    cursor: pointer;
+	}
+
+	.modal_back_left {
+		background-color: rgba(245,245,245,0.75);
+		width: 50%;
+		height: 0%;
+		transition: all 0.25s ease;
+		position: fixed;
+		opacity: 100%;
+		left: 0;
+		top: 0;
+		transform: translate(0, 0);
+		overflow-x: hidden;
+		overflow-y: auto;
+	    display: block;
+	}
+
+	.modal_back_right {
+		background-color: #FFFFFF;
+		width: 50%;
+		height: 0%;
+		transition: all 0.25s ease;
+		position: fixed;
+		opacity: 100%;
+		right: 0;
+		top: 0;
+		transform: translate(0, 0);
+		overflow-x: hidden;
+		overflow-y: auto;
+	    display: block;
+	}
+
+
+
+}
+
+
+.basic {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+}
+
+.basic_inner {
+
+
+}
+
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+.h2_special {
+    font-family: 'Atlas Grotesk Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 30px;
+	line-height: 40px;
+    width: fit-content;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	margin-top: 24px;
+	color: #222;
+	text-decoration: none;
+	padding: 0px 8px 2px 8px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.h2_special {
+		margin-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.h2_special {
+		font-size: 28px;
+		line-height: 40px;
+		margin-left: 10px;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.h2_special {
+		font-size: 26px;
+		line-height: 36px;
+		max-width: 100%;
+
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.h2_special {
+		font-size: 22px;
+		line-height: 34px;
+	}
+
+}
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+.h2_special2 {
+	font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	text-align: left;
+	font-size: 30px;
+	line-height: 40px;
+    width: fit-content;
+/*	text-transform: uppercase;*/
+	letter-spacing: 1px;
+	margin-top: 24px;
+	color: #222;
+	text-decoration: none;
+	padding: 0px 0px 2px 0px;
+	margin-bottom: 20px;
+	margin-top: 60px;
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+
+	.h2_special2 {
+		margin-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+	.h2_special2 {
+		font-size: 28px;
+		line-height: 40px;
+		margin-left: 10px;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.h2_special2 {
+		font-size: 26px;
+		line-height: 36px;
+		max-width: 100%;
+
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.h2_special2 {
+		font-size: 22px;
+		line-height: 34px;
+	}
+
+}
+
+
+
+ul h2 {
+	padding-bottom: 0px;
+}
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+.h2_special_list ul li, .h2_special_list ol li {
+	font-family: 'Atlas Grotesk Web', sans-serif;
+	font-style: normal;
+    font-weight: 300;
+	text-align: left;
+	font-size: 24px;
+	line-height: 36px;
+    width: fit-content;
+	letter-spacing: 0.2px;
+	color: #222;
+	text-decoration: none;
+	padding: 0px 8px 2px 0px;
+	margin-left: 20px;
+}
+
+
+.h2_special_list ul, .h2_special_list ol {
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 800px) {
+
+	.h2_special_list ul li, .h2_special_list ol li {
+		font-size: 20px;
+		line-height: 32px;
+		margin-left: 0px;
+	}
+
+
+	.h2_special_list ul, .h2_special_list ol {
+		margin-bottom: 30px;
+	}
+
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+
+.big_divider {
+	background-image: url("/images/projects/matter_nav/diag1.png");
+	background-color: none;
+	background-repeat: repeat;
+	width: 100%;
+	height: 16px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+
+.divider_advisors {
+	background-image: url("/images/projects/matter_nav/diag1.png");
+	background-color: none;
+	background-repeat: repeat;
+	width: 100%;
+	height: 16px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+@media screen and (max-width: 800px) {
+
+	.divider_advisors {
+		height: 8px;
+	}
+}
+
+
+
+.big_divider_bottom {
+	background-image: url("/images/projects/matter_nav/diag1.png");
+	background-color: none;
+	background-repeat: repeat;
+	width: 100%;
+	height: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––– */
+
+
+.matter_group_header {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 60px 20px 0px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+	width: fit-content;
+}
+
+.matter_group_header img {
+	height: 180px;
+	display: block;
+	float: left;	
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+	.matter_group_header {
+        font-size: 38px;
+        line-height: 48px;
+        margin-left: 20px;
+/*        margin: 20px 20px 20px 0px;*/
+	}
+
+
+	.matter_group_header img {
+	    height: 120px;
+	    display: block;
+	    float: left;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.matter_group_header {
+        margin-left: 0px;
+	}
+
+
+	.matter_group_header img {
+	    height: 120px;
+	    display: block;
+	    float: left;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+	.matter_group_header img {
+	    height: 90px;
+	    display: block;
+	    float: left;
+	}
+}
+
+
+
+
+
+
+
+.section_head_holder {
+    background-color: #F7F7F2;
+    background-repeat: repeat;
+    background-size: 384px;
+    border-radius: 4px;
+    background-image: url(/images/patterns/tile_bg_post.png);
+    padding: 48px 32px 32px 32px;
+}
+
+
+.section_head {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 64px;
+    line-height: 72px;
+    padding-top: 16px;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    text-align: left;
+    height: auto;
+    width: auto;
+}
+
+.section_subhead {
+    font-family: 'Atlas Grotesk Web', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+    padding: 0px 0px 0px 0px;
+    text-transform: uppercase;
+    text-align: left;
+    height: auto;
+    width: auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+	.section_head_holder {
+    	padding: 48px 24px 32px 24px;
+	}
+
+	.section_head {
+	    font-size: 56px;
+	    line-height: 56px;
+	}
+
+	.section_subhead {
+	    font-size: 32px;
+	    line-height: 32px;
+	}
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.section_head_holder {
+        padding: 48px 20px 20px 20px;
+	}
+
+	.section_head {
+	    font-size: 48px;
+	    line-height: 48px;
+    	padding-top: 16px;
+	}
+
+	.section_subhead {
+	    font-size: 24px;
+	    line-height: 24px;
+	}
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+	.section_head_holder {
+    	padding: 40px 20px 20px 20px;
+	}
+
+	.section_head {
+	    font-size: 40px;
+	    line-height: 40px;
+    	padding-top: 10px;
+	}
+
+	.section_subhead {
+	    font-size: 20px;
+	    line-height: 20px;
+	}
+
+}
+
+
+
+
+
+.advisors_flex_01 {
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+	border-radius: 4px;
+	margin: 4px 0px;
+}
+
+
+
+
+
+
+
+
+.image_container {
+	background-color: none;
+	background-repeat: repeat;
+	background-size: 300px;
+	border-radius: 8px;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+
+.image_container2 {
+	background-color: none;
+	background-repeat: repeat;
+	background-size: 300px;
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+
+	.image_container2 {
+		border-radius: 0px;
+		margin-bottom: 8px;
+	}
+}
+
+
+
+
+.kudos_container {
+    border-radius: 4px;
+    background-repeat: repeat;
+    background-size: 175px;
+    background-image: url(/images/patterns/kudos.png);
+    margin-bottom: 0px;
+}
+
+.frf1_container {
+    border-radius: 4px;
+    background-repeat: repeat;
+    background-size: 200px;
+    background-image: url(/images/patterns/bright_blue.png);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.frf1_container2 {
+    border-radius: 4px;
+    background-repeat: repeat;
+    background-size: 384px;
+    background-image: url(/images/patterns/bright_blue2.png);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.advisors_container {
+    border-radius: 4px;
+    background-repeat: repeat;
+    background-size: 288px;
+    background-image: url(/images/projects/matter_advisors/tile_bg_library.png);
+	margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.kudos_container {
+	    border-radius: 4px;
+	}
+
+	.frf1_container {
+	    border-radius: 4px;
+  		margin-top: 8px;
+	}
+
+	.frf1_container2 {
+	    border-radius: 4px;
+  		margin-top: 8px;
+  		background-size: 192px;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+	.kudos_container {
+	    border-radius: 4px;
+	    margin-bottom: 8px;
+	}
+
+	.frf1_container {
+	    border-radius: 4px;
+	    margin-bottom: 8px;
+	}
+
+	.frf1_container2 {
+	    border-radius: 4px;
+	    margin-bottom: 8px;
+	}
+}
+
+
+
+/*
+HOME UPDATE             
+*/
+
+.thumb_post {
+    width: 100%;
+    border-radius: 4px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+    border: solid 1px #DDDDDD;
+}
+
+.thumb_post img {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@media screen and (max-width: 1600px) {
+	.thumb_post {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.thumb_post {
+		height: 320px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.thumb_post {
+		height: 240px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.thumb_post {
+		height: 320px;
+		border-radius: 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.thumb_post {
+		height: 240px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.thumb_post {
+		height: 160px;
+	}
+}
+
+.home_header {
+	padding-bottom: 20px;
+}
+
+.home_header h3 a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-weight: 300;
+	font-style: normal;
+	text-align: left;
+	font-size: 34px;
+	line-height: 38px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	color: #222;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+
+	.home_header h3 a {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.home_header h3 a {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.home_header h3 a {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.home_header h3 a {
+		font-size: 20px;
+		line-height: 26px;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	}
+
+}
+
+
+time {
+	text-align: left;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 0;
+}
+
+
+
+
+.home_section {
+    border-bottom: 1px dotted #ccc;
+    max-width: 1200px;
+    overflow: hidden;
+    background: transparent;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 20px 20px 20px 20px;
+}
+
+#big_2 section:first-child {
+	border-bottom: 1px dotted #ccc;
+    max-width: 1200px;
+    overflow: hidden;
+    background: transparent;
+    /* padding-top: 20px; */
+    padding-bottom: 10px;
+    margin: 0px 20px 20px 20px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.home_section {
+		margin: 40px 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#big_2 section:first-child {
+		margin: 20px 20px;
+		padding-top: 0px;
+    	padding-bottom: 20px;
+	}
+}
+
+
+@media screen and (max-width: 500px) {
+    .home_section {
+		margin: 20px 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+	#big_2 section:first-child {
+		margin: 20px 20px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+	}
+}
+
+
+
+
+.home_excerpt {
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+    font-weight: 300;
+    font-style: normal;
+	font-size: 14px;
+	line-height: 24px;
+	color: #444;
+	letter-spacing: 0px;
+	display: block;
+	padding-top: 20px;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+.home_footer {
+	margin: 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.home_footer {
+		display: none;
+	}
+
+
+	.home_header {
+		margin: 0px 0px;
+	}
+
+	.home_excerpt {
+		margin: 0px 0px;
+		font-size: 12px;
+		line-height: 20px;
+		display: none;
+	}
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+
+
+	.home_header {
+		padding-bottom: 16px;
+	}
+
+}
+
+
+
+.inst_01 {
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	padding: 80px;
+	gap: 40px;
+	margin-top: 20px;
+}
+
+.inst_03 {
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	padding: 40px;
+	gap: 40px;
+	margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.inst_01 {
+		display: flex;
+		flex-direction: row;
+		background-color: #fff;
+		padding: 40px;
+		gap: 20px;
+		margin-top: 20px;
+	}
+}
+
+.library_divider_01 {
+    background-image: url("../images/patterns/library_divider_01.png");
+    background-color: none;
+    background-repeat: repeat;
+    width: 100%;
+    height: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 2px;
+}
+
+.library_divider_02 {
+    background-image: url("../images/patterns/library_divider_02.png");
+    background-color: none;
+    background-repeat: repeat;
+    width: 100%;
+    height: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 2px;
+}
+
+
+
+.g_group {
+	background-color: #222222;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+
+
+@media screen and (max-width: 800px) {
+	.g_group {
+		border-radius: 0px;
+		gap: 8px;
+		padding: 12px;
+		margin-bottom: 8px;
+	}
+}
+
+
+#g_framework {
+	padding: 0px;
+	background-color: transparent;
+}
+
+#g_framework img {
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 800px) {
+	#g_framework img {
+		border-radius: 0px;
+	}
+}
+
+#g_framework .g_outer {
+	background-color: transparent;
+}
+
+.g_outer {
+	background-color: #222222;
+	display: flex;
+	flex-direction: row;
+	gap: 12px;
+}
+
+@media screen and (max-width: 800px) {
+	.g_outer {
+		background-color: #222222;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+
+
+.g_inner {
+	width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+	.g_inner {
+		width: 100%;
+	}
+}
+
+
+
+
+
+.lulldull {
+	max-width: 800px;
+    align-content: center;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.lulldull {
+    	padding-bottom: 40px;
+		max-width: 400px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+/*
+MOBILE MARGIN UPDATE                        
+*/
+
+
+@media screen and (max-width: 800px) {
+
+	.posts article {
+	    margin: 0px 0px 48px 0px;
+	}
+
+	footer {
+	    padding: 20px 20px;
+	}
+
+    .large_words {
+        margin: 0px 20px;
+    }
+
+	article h2 {
+        margin: 0px 20px;
+	}
+
+
+	article h4 {
+        margin: 0px 20px;
+	}
+
+	header {
+        margin: 0px 20px;
+	}
+
+	.list {
+        margin: 0px 20px;
+	}
+
+	.frf1_container {
+	    border-radius: 0px;
+	}
+
+	.frf1_container2 {
+	    border-radius: 0px;
+	}
+
+	em {
+        margin: 0px 20px;		
+	}
+
+	.guide_header {
+        margin: 0px 20px;	
+	}
+
+	.h2_special {
+		margin-left: 20px;
+	}
+
+	.h2_special_list {
+    	margin: auto 20px;
+	}
+
+	.h2_special2 {
+		margin-left: 20px;
+	}
+
+	.matter_group_header {
+        margin-left: 20px;
+	}
+
+	.advisors_container {
+	    border-radius: 0px;
+	    background-size: 200px;
+	    margin-bottom: 8px;
+	}
+
+	.smaller_description {
+		margin-left: 20px;
+		margin-right: 20px;
+
+	}
+
+    .col_des {
+        margin-left: 20px;
+    }
+
+	.bg_color_none_less_pad img {
+		padding: 20px 20px 0px 20px;
+	}
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .col_des {
+        margin-left: 0px;
+    }
+
+}
+
+
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto 20px;
+    padding-bottom: 80px;
+}
+
+.post-nav {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Atlas typewriter Web', letter-gothic-std, monospace;
+	font-style: normal;
+	text-align: left;
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .post-nav {
+        font-size: 20px;
+		line-height: 24px;
+    }
+
+}
+
+.unsighted {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.booklist_normal {
+	padding: 0px 20px;
+	margin: 20px 0px;
+	background-color: #FFFFFF;
+}
+

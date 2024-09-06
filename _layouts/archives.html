@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- kapor_did_this -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+<title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title> 
+<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
+<link rel="canonical" href="{{site.baseurl}}{{page.url}}">
+<link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
+<script rel="stylesheet" href="{{site.baseurl}}/js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2010.07.06dev/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="{{site.baseurl}}/css/styles.css">
+<link rel="stylesheet" href="{{site.baseurl}}/css/special.css">
+<link rel="stylesheet" href="{{site.baseurl}}/css/fonts/fonts.css">
+<link rel="stylesheet" href="{{site.baseurl}}/css/matter.css">
+<link rel="stylesheet" href="{{site.baseurl}}/css/iop.css">
+<link rel="stylesheet" href="{{site.baseurl}}/css/fonts/AtlasTypewriter-Light-Web.css">
+<link rel="stylesheet" href="https://use.typekit.net/bff2sws.css">
+<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/images/icon/favicon.svg">
+
+<style type="text/css">
+.tag_cloud {
+	display: none;
+}
+</style>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	} else {
+		navbar.classList.remove("sticky");
+	}
+}
+</script>
+</head>
+<body class="no-scroll">
+
+<!-- ++++++++++ nav ++++++++++ -->
+
+{% include nav.html %}
+
+<!-- ++++++++++ main content ++++++++++ -->
+
+<div class="lotsofstuff">
+	<div id="big_1">
+
+	{% include sidebar1.html %}
+
+	</div>
+
+	<div id="big_2">
+
+	{{content}}
+	<button onclick="topFunction()" id="top_button" class="top_button" title="top">TOP</button>
+	</div>
+</div>
+<div class="left_white"></div>
+<!--+++++++++++++++++++++++ BACK TO TOP +++++++++++++++++++++++-->
+
+<script>
+
+window.addEventListener('scroll', function(e) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById('top_button').classList.add('scrolled');
+    } else {
+      document.getElementById('top_button').classList.remove('scrolled');
+    }
+});
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+
+</body>
+</html>
+
+

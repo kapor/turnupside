@@ -1,0 +1,103 @@
+---
+layout: default
+title: post
+---
+
+
+<article class="posts">
+	<article role="article">
+<!--
+		<div class="back_button">
+				<a onclick="window.history.back()">
+				Back
+				</a>
+		</div>
+-->
+		<header>
+			<h3>
+				{{page.entity}} / {{page.category}}
+			</h3>
+			
+			<time itemprop="dateCreated" datetime="{{page.date}}">
+				{{ page.loc }} + {{page.type}}
+			</time> 
+			
+		</header>
+
+			{{content}}
+
+		<footer>
+
+
+<!-- 			<div class="credit_container">
+				<div class="credit">
+					<div class="credit_top">
+						Role:
+					</div>
+					<div class="credit_bottom">
+						{{ page.role }}
+					</div>
+				</div>
+				<div class="credit">
+					<div class="credit_top">
+						Team:
+					</div>
+					<div class="credit_bottom">
+						{{ page.team }}
+					</div>
+				</div>
+				<div class="credit">
+					<div class="credit_top">
+						Location:
+					</div>
+					<div class="credit_bottom">
+						{{ page.loc }}
+					</div>
+				</div>
+				<div class="credit">
+					<div class="credit_top">
+						Date:
+					</div>
+					<div class="credit_bottom">
+						{{page.date | date: "%Y"}}
+					</div>
+				</div>
+			</div> -->
+
+
+
+			<p>{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}{% endunless %} {% endfor %}</p>
+		</footer>
+
+	</article>
+</article>
+
+
+<div class="post-nav">
+  <div>
+    {% if page.previous.url %}
+
+      <a href="{{page.previous.url}}">
+        <span class="unsighted">Prev:</span>
+        {{page.previous.category}}
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="post-nav-next">
+    {% if page.next.url %}
+    {% assign next_post_title_array = page.next.category | split: " " %}
+    {% assign next_post_cape_length = next_post_category_array | size | minus: 1 %}
+    {% assign next_post_cape = page.next.category | truncatewords: next_post_cape_length, "" %}
+    {% assign next_post_spit = next_post_category_array | last %}
+
+    <a href="{{page.next.url}}">
+      <span class="unsighted">Next:</span>
+      {{next_post_cape}}
+      <span style="white-space: nowrap;">
+      {{next_post_spit}}
+      </span>
+    </a>
+    {% endif %}
+  </div>
+</div>
